@@ -1,0 +1,515 @@
+//========================================================================================
+//  
+//  $File: $
+//  
+//  Owner: James.dd.Sun
+//  
+//  $Author: $
+//  
+//  $DateTime: $
+//  
+//  $Revision: $
+//  
+//  $Change: $
+//  
+//  Copyright 1997-2008 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#include "VCPlugInHeaders.h"
+
+// General includes:
+#include "MenuDef.fh"
+#include "ActionDef.fh"
+#include "ActionDefs.h"
+#include "AdobeMenuPositions.h"
+#include "LocaleIndex.h"
+#include "PMLocaleIds.h"
+#include "StringTable.fh"
+#include "ObjectModelTypes.fh"
+#include "ShuksanID.h"
+#include "ActionID.h"
+#include "CommandID.h"
+#include "WorkspaceID.h"
+#include "WidgetID.h"
+#include "BuildNumber.h"
+#include "PlugInModel_UIAttributes.h"
+#include "PanelList.fh"
+
+#include "InterfaceColorDefines.h"
+#include "IControlViewDefs.h"
+#include "SysControlIDs.h"
+#include "Widgets.fh"	// for PalettePanelWidget or DialogBoss
+
+
+// Project includes:
+#include "IDShortcutsID.h"
+#include "GenericID.h"
+#include "ShuksanID.h"
+#include "TextID.h"
+
+
+#ifdef __ODFRC__
+
+/*  Plugin version definition.
+*/
+resource PluginVersion (kSDKDefPluginVersionResourceID)
+{
+	kTargetVersion,
+	kIDShortcutsPluginID,
+	kSDKDefPlugInMajorVersionNumber, kSDKDefPlugInMinorVersionNumber,
+	kSDKDefHostMajorVersionNumber, kSDKDefHostMinorVersionNumber,
+	kIDShortcutsCurrentMajorFormatNumber, kIDShortcutsCurrentMinorFormatNumber,
+	{ kInDesignProduct},
+	{ kWildFS },
+	kModelPlugIn,
+	kIDShortcutsVersion
+};
+
+/*  The ExtraPluginInfo resource adds extra information to the Missing Plug-in dialog
+	that is popped when a document containing this plug-in's data is opened when
+	this plug-in is not present. These strings are not translatable strings
+	since they must be available when the plug-in isn't around. They get stored
+	in any document that this plug-in contributes data to.
+*/
+resource ExtraPluginInfo(1)
+{
+	kIDShortcutsCompanyValue,			// Company name
+	kIDShortcutsMissingPluginURLValue,	// URL 
+	kIDShortcutsMissingPluginAlertValue,	// Missing plug-in alert text
+};
+resource IgnoreTags(1)
+{
+	kImplementationIDSpace,
+	{
+		kIDShortcutsDataModelImpl,
+	}
+};
+
+resource IgnoreTags(2)
+{
+	kClassIDSpace,
+	{
+		kIDShortcutsPanelWidgetBoss,
+	}
+};
+
+
+/* Boss class definition.
+*/
+resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID)
+{{{
+	
+	/**
+	 This boss class supports two interfaces:
+	 IActionComponent and IPMPersist.
+
+	 
+	 @ingroup indesignshortcutslist
+	*/
+	Class
+	{
+		kIDShortcutsActionComponentBoss,
+		kInvalidClass,
+		{
+			/** Handle the actions from the menu. */
+			IID_IACTIONCOMPONENT, kIDShortcutsActionComponentImpl,
+			/** Persist the state of the menu across application instantiation.
+			Implementation provided by the API.*/
+			IID_IPMPERSIST, kPMPersistImpl
+		}
+	},
+
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidBoss,
+		{
+			IID_IIDSHORTCUTSDATAMODEL, kIDShortcutsDataModelImpl,
+		}
+	},
+
+	/**
+		 This boss class inherits from an API panel boss class, and
+		 adds an interface to control a pop-up menu on the panel.
+		 The implementation for this interface is provided by the API.
+
+		 
+		 @ingroup indesignshortcutslist
+	*/
+
+	Class
+	{
+		kIDShortcutsPanelWidgetBoss,
+		kPalettePanelWidgetBoss,
+		{
+			/** The plug-in's implementation of ITextControlData with an exotic IID of IID_IPANELMENUDATA.
+			Implementation provided by the API.
+			*/
+			IID_IPANELMENUDATA, kCPanelMenuDataImpl,
+		}
+	},
+
+	Class
+	{
+		kIDShortcutsTreeViewWidgetBoss,
+		kTreeViewWidgetBoss,
+		{
+			IID_ITREEVIEWWIDGETMGR,  kIDShortcutsTVWidgetMgrImpl,
+			IID_IOBSERVER,  kIDShortcutsTreeObserverImpl,
+			IID_ITREEVIEWHIERARCHYADAPTER,  kIDShortcutsTVHierarchyAdapterImpl,
+		}
+	},
+
+	Class
+	{
+		kIDShortcutsTreeNodeWidgetBoss,
+		kTreeNodeWidgetBoss,
+		{
+//			IID_IEVENTHANDLER,  kIDShortcutsTreeNodeEHImpl,
+			//IID_IPNLTRVSHADOWEVENTHANDLER,  kTreeNodeEventHandlerImpl,
+			//IID_IOBSERVER,  kPnlTrvNodeObserverImpl,
+		}
+	},
+
+
+
+}}};
+
+/*  Implementation definition.
+*/
+resource FactoryList (kSDKDefFactoryListResourceID)
+{
+	kImplementationIDSpace,
+	{
+		#include "IDShortcutsFactoryList.h"
+	}
+};
+
+
+/*  Menu definition.
+*/
+resource MenuDef (kSDKDefMenuResourceID)
+{
+	{
+		// The About Plug-ins sub-menu item for this plug-in.
+		kIDShortcutsAboutActionID,			// ActionID (kInvalidActionID for positional entries)
+		kIDShortcutsAboutMenuPath,			// Menu Path.
+		kSDKDefAlphabeticPosition,			// Menu Position.
+		kSDKDefIsNotDynamicMenuFlag,		// kSDKDefIsNotDynamicMenuFlag or kSDKDefIsDynamicMenuFlag
+
+
+		// Separator for the popup menu on the panel
+		kIDShortcutsSeparator1ActionID,
+		kIDShortcutsInternalPopupMenuNameKey kSDKDefDelimiterAndSeparatorPath,	// :- to mark an item as a separator.
+		kIDShortcutsSeparator1MenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		// About this plugin submenu for the popup menu on the panel
+		kIDShortcutsPopupAboutThisActionID,
+		kIDShortcutsTargetMenuPath
+		kIDShortcutsAboutThisMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+
+	}
+};
+
+/* Action definition.
+*/
+resource ActionDef (kSDKDefActionResourceID)
+{
+	{
+		kIDShortcutsActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIDShortcutsAboutActionID,	// ActionID.
+		kIDShortcutsAboutMenuKey,	// Sub-menu string.
+		kOtherActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,					// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,				// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,			// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag, // kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+
+		kIDShortcutsActionComponentBoss,
+		kIDShortcutsPopupAboutThisActionID,
+		kSDKDefAboutThisPlugInMenuKey,	// Key to the name of this action
+		kOtherActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefInvisibleInKBSCEditorFlag,
+
+
+
+	}
+};
+
+
+/*  LocaleIndex
+	The LocaleIndex should have indicies that point at your
+	localizations for each language system that you are localized for.
+*/
+/*  String LocaleIndex.
+*/
+resource LocaleIndex ( kSDKDefStringsResourceID)
+{
+	kStringTableRsrcType,
+	{
+		kWildFS, k_enUS, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_enGB, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_deDE, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_frFR, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_esES, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_ptBR, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_svSE, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_daDK, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_nlNL, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_itIT, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_nbNO, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_fiFI, kSDKDefStringsResourceID + index_enUS
+		kInDesignJapaneseFS, k_jaJP, kSDKDefStringsResourceID + index_jaJP
+	}
+};
+
+resource LocaleIndex (kSDKDefStringsNoTransResourceID)
+{
+	kStringTableRsrcType,
+	{
+		kWildFS, k_Wild, kSDKDefStringsNoTransResourceID + index_enUS
+	}
+};
+
+resource StringTable (kSDKDefStringsNoTransResourceID + index_enUS)
+{
+	k_enUS,									// Locale Id
+	kEuropeanMacToWinEncodingConverter,		// Character encoding converter
+	{
+		// No-Translate strings go here:
+
+		kIDShortcutsInternalPopupMenuNameKey,	kIDShortcutsInternalPopupMenuNameKey,		// No need to translate, internal menu name.
+
+	}
+};
+
+
+
+
+/*  Panel LocaleIndex.
+*/
+resource LocaleIndex (kSDKDefPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, 	kSDKDefPanelResourceID + index_enUS
+	}
+};
+resource LocaleIndex (kIDShortcutsTreeNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, 	kIDShortcutsTreeNodeWidgetRsrcID + index_enUS
+	}
+};
+
+
+/*  Type definition.
+*/
+type IDShortcutsPanelWidget(kViewRsrcType) : PalettePanelWidget(ClassID = kIDShortcutsPanelWidgetBoss)
+{
+	CPanelMenuData;
+};
+
+
+type IDSchortcutsTreeViewWidget(kViewRsrcType) : TreeViewWidget(ClassID = kIDShortcutsTreeViewWidgetBoss)
+{
+};
+
+type IDSchortcutsTreeNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kIDShortcutsTreeNodeWidgetBoss)
+{
+};
+
+
+/*  PanelList definition.
+*/
+resource PanelList (kSDKDefPanelResourceID)
+{
+	{
+		// 1st panel in the list
+		kSDKDefPanelResourceID,		// Resource ID for this panel (use SDK default rsrc ID)
+		kIDShortcutsPluginID,			// ID of plug-in that owns this panel
+		kIsResizable,
+		kIDShortcutsPanelWidgetActionID,	// Action ID to show/hide the panel
+		kIDShortcutsPanelTitleKey,	// Shows up in the Window list.
+		"",							// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+		0.0,						// Alternate Menu position Alternate Menu position for determining menu order
+		0,0,						// Rsrc ID, Plugin ID for a PNG icon resource to use for this palette
+		c_Panel
+	}
+};
+
+/*  PanelView definition.
+	The view is not currently localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IDShortcuts_enUS.fr etc.).
+*/
+resource IDShortcutsPanelWidget(kSDKDefPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,					// Localization macro
+	kIDShortcutsPanelWidgetID,			// WidgetID
+	kPMRsrcID_None,						// RsrcID
+	kBindNone,							// Binding (0=none)
+	0, 0, 400, 800,						// Frame: left, top, right, bottom.
+	kTrue, kTrue,						// Visible, Enabled
+	kFalse,								// Erase background
+	kInterfacePaletteFill,				// Erase to color
+	kFalse,								// Draw dropshadow
+	kIDShortcutsPanelTitleKey,			// Panel name
+	{
+		StaticTextWidget
+		(
+			0,								// WidgetId (default=0)
+			kSysStaticTextPMRsrcId,		// RsrcId
+			kBindNone,						// Frame binding
+			5, 10, 110, 27,					// Frame: left, top, right, bottom.
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignLeft, kEllipsizeEnd, kTrue		// Alignment, ellipsize style, convert ampersands
+			kIDShortcutsSearchTextKey,		// Initial text.
+			0								// No associated widget
+		),
+
+		TextEditBoxWidget
+		(
+			kIDSCSearchEditBoxWidgetID,
+			kSysEditBoxPMRsrcId,
+			kBindNone,
+			Frame(115, 10, 300, 27),
+			kTrue,
+			kTrue,
+			0,
+			0,
+			0,
+			200,
+			kFalse,
+			kTrue,
+			kFalse,
+			kFalse,
+			0,
+			0,
+			"",
+		),
+
+		IDSchortcutsTreeViewWidget
+		(
+			kIDShortcutsTreeViewWidgetID,
+			kPMRsrcID_None,
+			kBindAll,
+			Frame(6, 30, 394, 795)
+			kTrue,
+			kTrue,
+			kTrue,
+			kInterfacePaletteFill,
+			"",
+			kFalse,
+			kTrue,
+			kTrue,
+			20,
+			20,
+			20,
+			20,
+			1,		// 1=single selection, 0=no selection
+			kFalse,
+			kFalse,
+			{
+			},
+		),
+
+	}
+
+	""   //kIDShortcutsInternalPopupMenuNameKey		// Popup menu name (internal)
+};
+
+resource IDSchortcutsTreeNodeWidget(kIDShortcutsTreeNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kIDShortcutsTreeNodeWidgetId, 
+	kPMRsrcID_None,	// WidgetId, RsrcId
+	kBindLeft, //| kBindRight,					// Frame binding
+	Frame(0, 0, 1000, 18),						// Frame (left, top, right, bottom)
+	kTrue, kTrue,							// Visible, Enabled
+	"",										// Panel name
+	{
+		// Drop down arrow
+/*		TreeExpanderWidget
+		(
+			kTreeNodeExpanderWidgetID,		// WidgetId
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed node icon
+			kBindNone,						// Frame binding
+			Frame(2,4,18,18),				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kTreeBranchExpandedRsrcID, 		// RsrcId for expanded node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for expanded node icon
+			kTrue,							// Cmd-Click expands/collapses children
+			kFalse,							// Scroll to show children when expanded
+			kIconNoCentering,			
+			kIconRaisedLook,		// Sets the icon look -- (kIconRaisedLook | kIconFlushLook)
+			kFalse					// Bool integer sets whether the icon draws a well.
+		),
+*/
+		
+		GenericPanelWidget
+		(
+			kIDShortcutsNodePanelWidgetID,			// WidgetId
+			kPMRsrcID_None,					// RsrcId
+			kBindLeft | kBindRight,			// Frame binding
+			Frame(19,0,414,18)				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			"",
+			{
+				IconSuiteWidget
+				(
+					kPnlTrvIconWidgetId,		// WidgetId,
+					kPMRsrcID_None,
+					kBindLeft,					// Frame binding
+					Frame(0,0,18,18),			// Frame
+					kTrue, kTrue,				// Visible, Enabled
+					kIconCentering,		// (kIconNoCentering, kIconHorizontalCentering, kIconVerticalCentering or kIconCentering)
+										// Centering value from IconStyleDefs.h
+					kIconRaisedLook,		// Sets the icon look -- (kIconRaisedLook | kIconFlushLook)
+					kFalse					//  bool, draw Well..	
+					0,						// WidgetId for associated control for shortcut focus
+				),
+				
+				InfoStaticTextWidget
+				(
+					kIDShortcutsNodeNameWidgetID,		// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft, // Frame binding
+					Frame(19,0, 1000,18),				// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize, kTrue,					// Ellipsize style, Convert ampersands
+					"",								// Text Control Data	
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, 
+					kPaletteWindowSystemScriptFontId, 
+				),
+		
+	
+			}
+		),
+	}
+}
+
+#endif // __ODFRC__
+
+#include "IDShortcuts_enUS.fr"
+#include "IDShortcuts_jaJP.fr"
+
+//  Code generated by DollyXs code generator

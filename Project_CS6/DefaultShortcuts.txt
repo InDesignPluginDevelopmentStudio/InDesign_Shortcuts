@@ -1,0 +1,1591 @@
+Shortcut Set : Default
+
+Product area : File Menu
+	Browse in Bridge... --- Default: Ctrl+Alt+O
+	Browse in New Window... --- [none defined]
+	Check In... --- [none defined]
+	Close --- Default: Ctrl+W, Default: Ctrl+F4
+	Document Presets: Define... --- [none defined]
+	Document Setup... --- Default: Ctrl+Alt+P
+	Exit --- Default: Ctrl+Q
+	Export... --- Default: Ctrl+E
+	File Info... --- Default: Shift+Ctrl+Alt+I
+	Import XML... --- [none defined]
+	New: Book... --- [none defined]
+	New: Document... --- Default: Ctrl+N
+	New: Library... --- [none defined]
+	Open... --- Default: Ctrl+O
+	PDF Export Presets: Define... --- [none defined]
+	Package... --- Default: Shift+Ctrl+Alt+P
+	Place... --- Default: Ctrl+D
+	Print Booklet... --- [none defined]
+	Print Presets: Define... --- [none defined]
+	Print... --- Default: Ctrl+P
+	Revert --- [none defined]
+	Save --- Default: Ctrl+S
+	Save As... --- Default: Shift+Ctrl+S
+	Save a Copy... --- Default: Ctrl+Alt+S
+	User... --- [none defined]
+	Versions... --- [none defined]
+	XML... --- [none defined]
+
+Product area : Edit Menu
+	Assign Profiles... --- [none defined]
+	Cancel Check Out --- [none defined]
+	Check In --- Default: Shift+Ctrl+F9
+	Check In All --- Default: Shift+Ctrl+Alt+F9
+	Check Out --- Default: Ctrl+F9
+	Clear --- Default: Backspace, Default: Ctrl+Backspace, Default: Delete, Default: Ctrl+Delete
+	Color Settings... --- [none defined]
+	Convert to Profile... --- [none defined]
+	Copy --- Default: Ctrl+C
+	Cut --- Default: Ctrl+X
+	Deselect All --- Default: Shift+Ctrl+A
+	Duplicate --- Default: Shift+Ctrl+Alt+D
+	Edit HTML... --- [none defined]
+	Edit Original --- [none defined]
+	Edit in Story Editor --- Default: Ctrl+Y
+	Find Next --- Default: Ctrl+Alt+F
+	Find/Change... --- Default: Ctrl+F
+	Go To Source --- [none defined]
+	InCopy: Add All Graphics to Assignment: New... --- [none defined]
+	InCopy: Add All Stories to Assignment: New... --- [none defined]
+	InCopy: Add Layer to Assignment: New... --- [none defined]
+	InCopy: Add Selection to Assignment: New... --- [none defined]
+	InCopy: Export: All Graphics and Stories... --- [none defined]
+	InCopy: Export: All Graphics... --- [none defined]
+	InCopy: Export: All Stories... --- [none defined]
+	InCopy: Export: Layer... --- [none defined]
+	InCopy: Export: Selection... --- [none defined]
+	Include Cell Styles (e:) --- [none defined]
+	Include Character Styles (c:) --- [none defined]
+	Include Menu Commands (m:) --- [none defined]
+	Include Object Styles (o:) --- [none defined]
+	Include Paragraph Styles (p:) --- [none defined]
+	Include Scripts (s:) --- [none defined]
+	Include Table Styles (t:) --- [none defined]
+	Include Text Variables (v:) --- [none defined]
+	Keyboard Shortcuts... --- [none defined]
+	Menus... --- [none defined]
+	Paste --- Default: Ctrl+V
+	Paste Into --- Default: Ctrl+Alt+V
+	Paste in Place --- Default: Shift+Ctrl+Alt+V
+	Paste without Formatting --- Default: Shift+Ctrl+V
+	Place and Link --- [none defined]
+	Preferences: Advanced Type... --- [none defined]
+	Preferences: Appearance of Black... --- [none defined]
+	Preferences: Autocorrect... --- [none defined]
+	Preferences: Clipboard Handling... --- [none defined]
+	Preferences: Composition... --- [none defined]
+	Preferences: Dictionary... --- [none defined]
+	Preferences: Display Performance... --- [none defined]
+	Preferences: File Handling... --- [none defined]
+	Preferences: General... --- Default: Ctrl+K
+	Preferences: Grids... --- [none defined]
+	Preferences: Guides & Pasteboard... --- [none defined]
+	Preferences: Interface... --- [none defined]
+	Preferences: Notes... --- [none defined]
+	Preferences: Spelling... --- [none defined]
+	Preferences: Story Editor Display... --- [none defined]
+	Preferences: Track Changes... --- [none defined]
+	Preferences: Type... --- [none defined]
+	Preferences: Units & Increments... --- [none defined]
+	Quick Apply... --- Default: Ctrl+Enter
+	Redo --- Default: Shift+Ctrl+Z
+	Save Content --- [none defined]
+	Select All --- Default: Ctrl+A
+	Show Hidden Menu Commands --- [none defined]
+	Spelling: Autocorrect --- [none defined]
+	Spelling: Check Spelling... --- Default: Ctrl+I
+	Spelling: Dynamic Spelling --- [none defined]
+	Spelling: User Dictionary... --- [none defined]
+	Step and Repeat... --- Default: Ctrl+Alt+U
+	Transparency Blend Space: Document CMYK --- [none defined]
+	Transparency Blend Space: Document RGB --- [none defined]
+	Transparency Flattener Presets... --- [none defined]
+	Undo --- Default: Ctrl+Z
+	Update Content --- Default: Ctrl+F5
+
+Product area : Layout Menu
+	Create Guides... --- [none defined]
+	First Page --- Default: Shift+Ctrl+Page Up
+	Go Back --- Default: Ctrl+Page Up
+	Go Forward --- Default: Ctrl+Page Down
+	Go to Page... --- Default: Ctrl+J, Presentation Mode: Ctrl+J
+	Last Page --- Default: Shift+Ctrl+Page Down
+	Layout Adjustment... --- [none defined]
+	Left Spread --- Presentation Mode: Left Arrow
+	Liquid Layout --- [none defined]
+	Margins and Columns... --- [none defined]
+	Next Page --- Default: Shift+Page Down, Text: Shift+Page Down
+	Next Spread --- Default: Alt+Page Down, Presentation Mode: Space, Presentation Mode: Down Arrow, Presentation Mode: Enter, Presentation Mode: Page Down
+	Numbering & Section Options... --- [none defined]
+	Pages: Add Page --- Default: Shift+Ctrl+P
+	Previous Page --- Default: Shift+Page Up, Text: Shift+Page Up
+	Previous Spread --- Default: Alt+Page Up, Presentation Mode: Shift+Space, Presentation Mode: Backspace, Presentation Mode: Up Arrow, Presentation Mode: Page Up
+	Right Spread --- Presentation Mode: Right Arrow
+	Ruler Guides... --- [none defined]
+	Table of Contents Styles... --- [none defined]
+	Table of Contents... --- [none defined]
+	Update Table of Contents --- [none defined]
+
+Product area : Type Menu
+	Bulleted & Numbered Lists: Apply/Remove Bullets --- [none defined]
+	Bulleted & Numbered Lists: Apply/Remove Numbers --- [none defined]
+	Bulleted & Numbered Lists: Convert Bullets and Numbering to Text --- [none defined]
+	Bulleted & Numbered Lists: Define Lists... --- [none defined]
+	Bulleted & Numbered Lists: Restart/Continue Numbering --- [none defined]
+	Change Case: Sentence case --- [none defined]
+	Change Case: Title Case --- [none defined]
+	Change Case: UPPERCASE --- [none defined]
+	Change Case: lowercase --- [none defined]
+	Convert URLs to Hyperlinks... --- [none defined]
+	Create Outlines --- Default: Shift+Ctrl+O
+	Create outlines without deleting text --- Default: Shift+Ctrl+Alt+O
+	Document Footnote Options... --- [none defined]
+	Fill with Placeholder Text --- [none defined]
+	Find Font... --- [none defined]
+	Go to Footnote Text --- [none defined]
+	Ignore All --- [none defined]
+	Insert Break Character: Column Break --- Text: Num Enter
+	Insert Break Character: Discretionary Line Break --- [none defined]
+	Insert Break Character: Even Page Break --- [none defined]
+	Insert Break Character: Forced Line Break --- Text: Shift+Enter
+	Insert Break Character: Frame Break --- Text: Shift+Num Enter
+	Insert Break Character: Non-joiner --- [none defined]
+	Insert Break Character: Odd Page Break --- [none defined]
+	Insert Break Character: Page Break --- Text: Ctrl+Num Enter
+	Insert Break Character: Paragraph Return --- Text: Enter
+	Insert Footnote --- [none defined]
+	Insert Special Character: Hyphens and Dashes: Discretionary Hyphen --- Text: Shift+Ctrl+-
+	Insert Special Character: Hyphens and Dashes: Em Dash --- Text: Shift+Alt+-
+	Insert Special Character: Hyphens and Dashes: En Dash --- Text: Alt+-
+	Insert Special Character: Hyphens and Dashes: Nonbreaking Hyphen --- Text: Ctrl+Alt+-
+	Insert Special Character: Markers: Current Page Number --- Text: Shift+Ctrl+Alt+N
+	Insert Special Character: Markers: Footnote Number --- [none defined]
+	Insert Special Character: Markers: Next Page Number --- [none defined]
+	Insert Special Character: Markers: Previous Page Number --- [none defined]
+	Insert Special Character: Markers: Section Marker --- [none defined]
+	Insert Special Character: Other: End Nested Style Here --- [none defined]
+	Insert Special Character: Other: Indent to Here --- Text: Ctrl+\
+	Insert Special Character: Other: Right Indent Tab --- Text: Shift+Tab
+	Insert Special Character: Other: Tab --- Text: Tab
+	Insert Special Character: Quotation Marks: Double Left Quotation Marks --- Text: Alt+[
+	Insert Special Character: Quotation Marks: Double Right Quotation Marks --- Text: Shift+Alt+[
+	Insert Special Character: Quotation Marks: Single Left Quotation Mark --- Text: Alt+]
+	Insert Special Character: Quotation Marks: Single Right Quotation Mark --- Text: Shift+Alt+]
+	Insert Special Character: Quotation Marks: Straight Double Quotation Marks --- Text: Shift+Alt+'
+	Insert Special Character: Quotation Marks: Straight Single Quotation Mark (Apostrophe) --- Text: Alt+'
+	Insert Special Character: Symbols: Bullet Character --- Text: Alt+8
+	Insert Special Character: Symbols: Copyright Symbol --- Text: Alt+G
+	Insert Special Character: Symbols: Ellipsis --- Text: Alt+;
+	Insert Special Character: Symbols: Paragraph Symbol --- Text: Alt+7
+	Insert Special Character: Symbols: Registered Trademark Symbol --- Text: Alt+R
+	Insert Special Character: Symbols: Section Symbol --- Text: Alt+6
+	Insert Special Character: Symbols: Trademark Symbol --- Text: Alt+2
+	Insert White Space: Em Space --- Text: Shift+Ctrl+M
+	Insert White Space: En Space --- Text: Shift+Ctrl+N
+	Insert White Space: Figure Space --- [none defined]
+	Insert White Space: Flush Space --- [none defined]
+	Insert White Space: Hair Space --- [none defined]
+	Insert White Space: Nonbreaking Space --- Text: Ctrl+Alt+X
+	Insert White Space: Nonbreaking Space (Fixed Width) --- [none defined]
+	Insert White Space: Punctuation Space --- [none defined]
+	Insert White Space: Quarter Space --- [none defined]
+	Insert White Space: Sixth Space --- [none defined]
+	Insert White Space: Thin Space --- Text: Shift+Ctrl+Alt+M
+	Insert White Space: Third Space --- [none defined]
+	Notes: Convert Line to Note --- [none defined]
+	Notes: Convert Paragraph to Note --- [none defined]
+	Notes: Convert Story to Note --- [none defined]
+	Notes: Convert Word to Note --- [none defined]
+	Notes: Convert to Note --- [none defined]
+	Notes: Convert to Text --- [none defined]
+	Notes: Copy Text to Note --- [none defined]
+	Notes: Delete Note --- [none defined]
+	Notes: Expand/Collapse Notes in Story --- [none defined]
+	Notes: New Note --- [none defined]
+	Notes: Next Note --- [none defined]
+	Notes: Notes Mode --- Text: Ctrl+F8
+	Notes: Open Note --- [none defined]
+	Notes: Previous Note --- [none defined]
+	Notes: Remove All Notes --- [none defined]
+	Notes: Remove Notes from Story --- [none defined]
+	Notes: Split Note --- [none defined]
+	Show Hidden Characters --- Default: Ctrl+Alt+I
+	Size: Other: Other... --- [none defined]
+	Tabs --- Default: Shift+Ctrl+T
+	Text Variables: Convert Variable to Text --- [none defined]
+	Text Variables: Define... --- [none defined]
+	Track Changes: Accept All Changes by This User: In This Document --- [none defined]
+	Track Changes: Accept All Changes by This User: In This Story --- [none defined]
+	Track Changes: Accept All Changes: In This Document --- [none defined]
+	Track Changes: Accept All Changes: In This Story --- [none defined]
+	Track Changes: Accept Change --- [none defined]
+	Track Changes: Accept Change, Find Next --- [none defined]
+	Track Changes: Disable Tracking in All Stories --- [none defined]
+	Track Changes: Enable Tracking in All Stories --- [none defined]
+	Track Changes: Next Change --- Text: Ctrl+Page Down
+	Track Changes: Previous Change --- Text: Ctrl+Page Up
+	Track Changes: Reject All Changes by This User: In This Document --- [none defined]
+	Track Changes: Reject All Changes by This User: In This Story --- [none defined]
+	Track Changes: Reject All Changes: In This Document --- [none defined]
+	Track Changes: Reject All Changes: In This Story --- [none defined]
+	Track Changes: Reject Change --- [none defined]
+	Track Changes: Reject Change, Find Next --- [none defined]
+	Track Changes: Track Changes in Current Story --- [none defined]
+	Type on Path: Delete Type from Path --- [none defined]
+	Type on Path: Options... --- [none defined]
+
+Product area : Object Menu
+	Anchored Object: Insert... --- [none defined]
+	Anchored Object: Options... --- [none defined]
+	Anchored Object: Release --- [none defined]
+	Arrange: Bring Forward --- Default: Ctrl+]
+	Arrange: Bring to Front --- Default: Shift+Ctrl+]
+	Arrange: Send Backward --- Default: Ctrl+[
+	Arrange: Send to Back --- Default: Shift+Ctrl+[
+	Baseline Options --- [none defined]
+	Captions: Caption Setup... --- [none defined]
+	Captions: Convert to Static Caption --- [none defined]
+	Captions: Generate Live Caption --- [none defined]
+	Captions: Generate Static Caption --- [none defined]
+	Clipping Path: Convert Clipping Path to Frame --- [none defined]
+	Clipping Path: Options... --- Default: Shift+Ctrl+Alt+K
+	Content: Graphic --- [none defined]
+	Content: Text --- [none defined]
+	Content: Unassigned --- [none defined]
+	Convert Shape: Beveled Rectangle --- [none defined]
+	Convert Shape: Ellipse --- [none defined]
+	Convert Shape: Fancy Rectangle --- [none defined]
+	Convert Shape: Inverse Rounded Rectangle --- [none defined]
+	Convert Shape: Line --- [none defined]
+	Convert Shape: Orthogonal Line --- [none defined]
+	Convert Shape: Polygon --- [none defined]
+	Convert Shape: Rectangle --- [none defined]
+	Convert Shape: Rounded Rectangle --- [none defined]
+	Convert Shape: Triangle --- [none defined]
+	Corner Options... --- [none defined]
+	Display: Fast Display --- [none defined]
+	Display: High Quality Display --- [none defined]
+	Display: Typical Display --- [none defined]
+	Display: Use View Setting --- [none defined]
+	Effects: Basic Feather... --- [none defined]
+	Effects: Bevel and Emboss... --- [none defined]
+	Effects: Clear All Transparency --- [none defined]
+	Effects: Clear Effects --- [none defined]
+	Effects: Directional Feather... --- [none defined]
+	Effects: Drop Shadow... --- Default: Ctrl+Alt+M
+	Effects: Global Light... --- [none defined]
+	Effects: Gradient Feather... --- [none defined]
+	Effects: Inner Glow... --- [none defined]
+	Effects: Inner Shadow... --- [none defined]
+	Effects: Outer Glow... --- [none defined]
+	Effects: Satin... --- [none defined]
+	Effects: Transparency... --- [none defined]
+	Fitting: Center Content --- Default: Shift+Ctrl+E
+	Fitting: Clear Frame Fitting Options --- [none defined]
+	Fitting: Fill Frame Proportionally --- Default: Shift+Ctrl+Alt+C
+	Fitting: Fit Content Proportionally --- Default: Shift+Ctrl+Alt+E
+	Fitting: Fit Content to Frame --- Default: Ctrl+Alt+E
+	Fitting: Fit Frame to Content --- Default: Ctrl+Alt+C
+	Fitting: Frame Fitting Options... --- [none defined]
+	Group --- Default: Ctrl+G
+	Hide --- Default: Ctrl+3
+	Image Color Settings... --- [none defined]
+	Insert HTML... --- [none defined]
+	Interactive: Convert to Button --- [none defined]
+	Interactive: Convert to Check Box --- [none defined]
+	Interactive: Convert to Combo Box --- [none defined]
+	Interactive: Convert to List Box --- [none defined]
+	Interactive: Convert to Object --- [none defined]
+	Interactive: Convert to Radio Button --- [none defined]
+	Interactive: Convert to Signature Field --- [none defined]
+	Interactive: Convert to Text Field --- [none defined]
+	Interactive: Set Tab Order... --- [none defined]
+	Lock --- Default: Ctrl+L
+	Object Export Options... --- [none defined]
+	Object Layer Options... --- [none defined]
+	Pathfinder: Add --- [none defined]
+	Pathfinder: Exclude Overlap --- [none defined]
+	Pathfinder: Intersect --- [none defined]
+	Pathfinder: Minus Back --- [none defined]
+	Pathfinder: Subtract --- [none defined]
+	Paths: Close Path --- [none defined]
+	Paths: Convert Point: Corner --- [none defined]
+	Paths: Convert Point: Plain --- [none defined]
+	Paths: Convert Point: Smooth --- [none defined]
+	Paths: Convert Point: Symmetrical --- [none defined]
+	Paths: Join --- [none defined]
+	Paths: Make Compound Path --- Default: Ctrl+8
+	Paths: Open Path --- [none defined]
+	Paths: Release Compound Path --- Default: Shift+Ctrl+Alt+8
+	Paths: Reverse Path --- [none defined]
+	Select: Container --- Default: Escape
+	Select: Content --- Default: Shift+Escape
+	Select: First Object Above --- Default: Shift+Ctrl+Alt+]
+	Select: Last Object Below --- Default: Shift+Ctrl+Alt+[
+	Select: Next Object --- [none defined]
+	Select: Next Object Above --- Default: Ctrl+Alt+]
+	Select: Next Object Below --- Default: Ctrl+Alt+[
+	Select: Previous Object --- [none defined]
+	Show All on Spread --- Default: Ctrl+Alt+3
+	Text Frame Options... --- Default: Ctrl+B
+	Transform Again: Transform Again --- [none defined]
+	Transform Again: Transform Again Individually --- [none defined]
+	Transform Again: Transform Sequence Again --- Default: Ctrl+Alt+4
+	Transform Again: Transform Sequence Again Individually --- [none defined]
+	Transform: Flip Horizontal --- [none defined]
+	Transform: Flip Vertical --- [none defined]
+	Transform: Move Guides... --- [none defined]
+	Transform: Move... --- Default: Shift+Ctrl+M
+	Transform: Rotate 180° --- [none defined]
+	Transform: Rotate 90° CCW --- [none defined]
+	Transform: Rotate 90° CW --- [none defined]
+	Transform: Rotate... --- [none defined]
+	Transform: Scale... --- [none defined]
+	Transform: Shear... --- [none defined]
+	Ungroup --- Default: Shift+Ctrl+G
+	Unlock --- [none defined]
+	Unlock All --- [none defined]
+	Unlock All on Spread --- Default: Ctrl+Alt+L
+
+Product area : Table Menu
+	Cell Options: Diagonal Lines... --- [none defined]
+	Cell Options: Rows and Columns... --- [none defined]
+	Cell Options: Strokes and Fills... --- [none defined]
+	Cell Options: Text... --- Tables: Ctrl+Alt+B
+	Convert Table to Text... --- [none defined]
+	Convert Text to Table... --- [none defined]
+	Convert to Body Rows --- [none defined]
+	Convert to Footer Rows --- [none defined]
+	Convert to Header Rows --- [none defined]
+	Delete: Column --- Tables: Shift+Backspace
+	Delete: Row --- Tables: Ctrl+Backspace
+	Delete: Table --- [none defined]
+	Distribute Columns Evenly --- [none defined]
+	Distribute Rows Evenly --- [none defined]
+	Edit Footer --- [none defined]
+	Edit Header --- [none defined]
+	Go to Row... --- [none defined]
+	Insert Table... --- Text: Shift+Ctrl+Alt+T
+	Insert: Column... --- Tables: Ctrl+Alt+9
+	Insert: Row... --- Tables: Ctrl+9
+	Merge Cells --- [none defined]
+	Select: Body Rows --- [none defined]
+	Select: Cell --- Tables: Ctrl+/
+	Select: Column --- Tables: Ctrl+Alt+3
+	Select: Footer Rows --- [none defined]
+	Select: Header Rows --- [none defined]
+	Select: Row --- Tables: Ctrl+3
+	Select: Table --- Tables: Ctrl+Alt+A
+	Split Cell Horizontally --- [none defined]
+	Split Cell Vertically --- [none defined]
+	Table Options: Alternating Column Strokes... --- [none defined]
+	Table Options: Alternating Fills... --- [none defined]
+	Table Options: Alternating Row Strokes... --- [none defined]
+	Table Options: Headers and Footers... --- [none defined]
+	Table Options: Table Setup... --- Default: Shift+Ctrl+Alt+B
+	To Body --- [none defined]
+	To Footer --- [none defined]
+	To Header --- [none defined]
+	Unmerge Cells --- [none defined]
+
+Product area : View Menu
+	Actual Size --- Default: Ctrl+1
+	Display Performance: Allow Object-Level Display Settings --- [none defined]
+	Display Performance: Clear Object-Level Display Settings --- Default: Shift+Ctrl+F2
+	Display Performance: Fast Display --- Default: Shift+Ctrl+Alt+Z
+	Display Performance: High Quality Display --- Default: Ctrl+Alt+H
+	Display Performance: Typical Display --- Default: Ctrl+Alt+Z
+	Entire Pasteboard --- Default: Shift+Ctrl+Alt+0
+	Extras: Hide Anchored Object Control --- [none defined]
+	Extras: Hide Assigned Frames --- [none defined]
+	Extras: Hide Content Grabber --- [none defined]
+	Extras: Hide Conveyor --- Default: Alt+B
+	Extras: Hide Live Corners --- [none defined]
+	Extras: Hide Notes --- [none defined]
+	Extras: Show Frame Edges --- Default: Ctrl+H
+	Extras: Show Hyperlinks --- [none defined]
+	Extras: Show Link Badge --- [none defined]
+	Extras: Show Text Threads --- Default: Ctrl+Alt+Y
+	Fit Page in Window --- Default: Ctrl+0
+	Fit Spread in Window --- Default: Ctrl+Alt+0
+	Grids & Guides: Delete All Guides on Spread --- [none defined]
+	Grids & Guides: Lock Column Guides --- [none defined]
+	Grids & Guides: Lock Guides --- Default: Ctrl+Alt+;
+	Grids & Guides: Show Baseline Grid --- Default: Ctrl+Alt+'
+	Grids & Guides: Show Document Grid --- Default: Ctrl+'
+	Grids & Guides: Show Guides --- Default: Ctrl+;
+	Grids & Guides: Smart Guides --- Default: Ctrl+U
+	Grids & Guides: Snap to Document Grid --- Default: Shift+Ctrl+'
+	Grids & Guides: Snap to Guides --- Default: Shift+Ctrl+;
+	Hide Rulers --- Default: Ctrl+R
+	Ink Manager... --- [none defined]
+	Overprint Preview --- Default: Shift+Ctrl+Alt+Y
+	Proof Colors --- [none defined]
+	Proof Setup: Custom... --- [none defined]
+	Proof Setup: Document CMYK --- [none defined]
+	Proof Setup: Macintosh RGB --- [none defined]
+	Proof Setup: Monitor RGB --- [none defined]
+	Proof Setup: Windows RGB --- [none defined]
+	Proof Setup: Working CMYK --- [none defined]
+	Screen Mode: Bleed --- [none defined]
+	Screen Mode: Normal --- [none defined]
+	Screen Mode: Presentation --- Presentation Mode: Escape, Default: Shift+W, Presentation Mode: Shift+W
+	Screen Mode: Preview --- [none defined]
+	Screen Mode: Set Presentation Background to Black --- Presentation Mode: B
+	Screen Mode: Set Presentation Background to Gray --- Presentation Mode: G
+	Screen Mode: Set Presentation Background to White --- Presentation Mode: W
+	Screen Mode: Slug --- [none defined]
+	Show Changes --- [none defined]
+	Story Editor: Show Depth Ruler --- [none defined]
+	Story Editor: Show Paragraph Break Marks --- [none defined]
+	Story Editor: Show Style Name Column --- [none defined]
+	Structure: Show Structure --- Default: Ctrl+Alt+1
+	Structure: Show Tag Markers --- [none defined]
+	Structure: Show Tagged Frames --- [none defined]
+	Zoom In --- Default: Ctrl+=, Default: Ctrl+Num +
+	Zoom Out --- Default: Ctrl+-, Default: Ctrl+Num -
+
+Product area : Window Menu
+	Arrange: Cascade --- [none defined]
+	Arrange: Consolidate All Windows --- [none defined]
+	Arrange: Float All in Windows --- [none defined]
+	Arrange: Float in Window --- [none defined]
+	Arrange: Minimize --- [none defined]
+	Arrange: New Window --- [none defined]
+	Arrange: Split Window --- [none defined]
+	Arrange: Tile --- [none defined]
+	Articles --- [none defined]
+	BasicDragDrop[US] --- [none defined]
+	Color: Color --- Default: F6
+	Color: Gradient --- [none defined]
+	Color: Swatches --- Default: F5
+	Control --- Default: Ctrl+Alt+6
+	Data Schema --- [none defined]
+	Document Property --- [none defined]
+	Editorial: Assignments --- [none defined]
+	Editorial: Notes --- [none defined]
+	Editorial: Track Changes --- [none defined]
+	Effects --- Default: Shift+Ctrl+F10
+	Extensions: Kuler --- [none defined]
+	Folio Builder --- [none defined]
+	Global JavaScript --- [none defined]
+	InDesignShortcutsList[US] --- [none defined]
+	Info --- Default: F8
+	Interactive: Animation --- [none defined]
+	Interactive: Bookmarks --- [none defined]
+	Interactive: Buttons and Forms --- [none defined]
+	Interactive: Hyperlinks --- [none defined]
+	Interactive: Liquid Layout --- [none defined]
+	Interactive: Media --- [none defined]
+	Interactive: Object States --- [none defined]
+	Interactive: Page Transitions --- [none defined]
+	Interactive: SWF Preview --- Default: Shift+Ctrl+Enter, Default: Shift+Ctrl+Num Enter
+	Interactive: Timing --- [none defined]
+	Invalid Items --- [none defined]
+	Layers --- Default: F7
+	Links --- Default: Shift+Ctrl+D
+	Mini Bridge --- [none defined]
+	Object & Layout: Align --- Default: Shift+F7
+	Object & Layout: Pathfinder --- [none defined]
+	Object & Layout: Transform --- [none defined]
+	Output: Attributes --- [none defined]
+	Output: Flattener Preview --- [none defined]
+	Output: Preflight --- Default: Shift+Ctrl+Alt+F
+	Output: Separations Preview --- Default: Shift+F6
+	Output: Trap Presets --- [none defined]
+	Pages --- Default: F12, Default: Ctrl+F12
+	PanelTreeView[US] --- [none defined]
+	SnippetRunner[US] --- [none defined]
+	Stroke --- Default: F10, Default: Ctrl+F10
+	Styles: Cell Styles --- [none defined]
+	Styles: Character Styles --- Default: Shift+F11, Default: Shift+Ctrl+F11
+	Styles: Object Styles --- Default: Ctrl+F7
+	Styles: Paragraph Styles --- Default: F11, Default: Ctrl+F11
+	Styles: Table Styles --- [none defined]
+	Text Wrap --- Default: Ctrl+Alt+W
+	Tools --- [none defined]
+	Type & Tables: Character --- Default: Ctrl+T
+	Type & Tables: Conditional Text --- [none defined]
+	Type & Tables: Cross-References --- [none defined]
+	Type & Tables: Glyphs --- Default: Shift+Alt+F11
+	Type & Tables: Index --- Default: Shift+F8
+	Type & Tables: Paragraph --- Default: Ctrl+Alt+T, Default: Ctrl+M
+	Type & Tables: Story --- [none defined]
+	Type & Tables: Table --- Default: Shift+F9
+	Utilities: Background Tasks --- [none defined]
+	Utilities: Data Merge --- [none defined]
+	Utilities: Script Label --- [none defined]
+	Utilities: Scripts --- Default: Ctrl+Alt+F11
+	Utilities: Tags --- [none defined]
+	Variable Definition --- [none defined]
+	Workspace: Delete Workspace... --- [none defined]
+	Workspace: Load 1st Default Workspace --- [none defined]
+	Workspace: Load 1st User Workspace --- [none defined]
+	Workspace: Load 2nd Default Workspace --- [none defined]
+	Workspace: Load 2nd User Workspace --- [none defined]
+	Workspace: Load 3rd Default Workspace --- [none defined]
+	Workspace: Load 3rd User Workspace --- [none defined]
+	Workspace: Load 4th Default Workspace --- [none defined]
+	Workspace: Load 4th User Workspace --- [none defined]
+	Workspace: Load 5th Default Workspace --- [none defined]
+	Workspace: Load 5th User Workspace --- [none defined]
+	Workspace: Load 6th Default Workspace --- [none defined]
+	Workspace: Load 6th User Workspace --- [none defined]
+	Workspace: Load 7th Default Workspace --- [none defined]
+	Workspace: Load 7th User Workspace --- [none defined]
+	Workspace: Load 8th Default Workspace --- [none defined]
+	Workspace: Load 8th User Workspace --- [none defined]
+	Workspace: Load 9th Default Workspace --- [none defined]
+	Workspace: Load 9th User Workspace --- [none defined]
+	Workspace: New Workspace... --- [none defined]
+	Workspace: Reset Advanced --- [none defined]
+	Workspace: Show Full Menus --- [none defined]
+	xPresso Preflight --- [none defined]
+
+Product area : Help Menu
+	About InDesign... --- [none defined]
+	Adobe Product Improvement Program... --- [none defined]
+	InDesign Help... --- Default: F1
+	InDesign Online... --- [none defined]
+	InDesign Support Center... --- [none defined]
+	Manage Extensions... --- [none defined]
+	Welcome Screen... --- [none defined]
+
+Product area : Object Editing
+	Decrease scale by 1% --- Default: Ctrl+,
+	Decrease scale by 5% --- Default: Ctrl+Alt+,
+	Decrease size by 1% --- [none defined]
+	Decrease size by 5% --- [none defined]
+	End Path Drawing --- Default: Enter, Default: Num Enter
+	Horizontal Align Center --- [none defined]
+	Horizontal Align Left --- [none defined]
+	Horizontal Align Right --- [none defined]
+	Horizontal Distribute Center --- [none defined]
+	Horizontal Distribute Left --- [none defined]
+	Horizontal Distribute Right --- [none defined]
+	Horizontal Distribute Space --- [none defined]
+	Horizontal Margin Align Center --- [none defined]
+	Horizontal Margin Align Left --- [none defined]
+	Horizontal Margin Align Right --- [none defined]
+	Horizontal Page Align Center --- [none defined]
+	Horizontal Page Align Left --- [none defined]
+	Horizontal Page Align Right --- [none defined]
+	Horizontal Spread Align Center --- [none defined]
+	Horizontal Spread Align Left --- [none defined]
+	Horizontal Spread Align Right --- [none defined]
+	Increase scale by 1% --- Default: Ctrl+.
+	Increase scale by 5% --- Default: Ctrl+Alt+.
+	Increase size by 1% --- [none defined]
+	Increase size by 5% --- [none defined]
+	Liquid Guide --- [none defined]
+	Magnetic Guide --- [none defined]
+	Nudge down --- Default: Down Arrow
+	Nudge down 1/10 --- Default: Shift+Ctrl+Down Arrow
+	Nudge down 1/10 duplicate --- Default: Shift+Ctrl+Alt+Down Arrow
+	Nudge down duplicate --- Default: Alt+Down Arrow
+	Nudge down x10 --- Default: Shift+Down Arrow
+	Nudge down x10 duplicate --- Default: Shift+Alt+Down Arrow
+	Nudge left --- Default: Left Arrow
+	Nudge left 1/10 --- Default: Shift+Ctrl+Left Arrow
+	Nudge left 1/10 duplicate --- Default: Shift+Ctrl+Alt+Left Arrow
+	Nudge left duplicate --- Default: Alt+Left Arrow
+	Nudge left x10 --- Default: Shift+Left Arrow
+	Nudge left x10 duplicate --- Default: Shift+Alt+Left Arrow
+	Nudge right --- Default: Right Arrow
+	Nudge right 1/10 --- Default: Shift+Ctrl+Right Arrow
+	Nudge right 1/10 duplicate --- Default: Shift+Ctrl+Alt+Right Arrow
+	Nudge right duplicate --- Default: Alt+Right Arrow
+	Nudge right x10 --- Default: Shift+Right Arrow
+	Nudge right x10 duplicate --- Default: Shift+Alt+Right Arrow
+	Nudge up --- Default: Up Arrow
+	Nudge up 1/10 --- Default: Shift+Ctrl+Up Arrow
+	Nudge up 1/10 duplicate --- Default: Shift+Ctrl+Alt+Up Arrow
+	Nudge up duplicate --- Default: Alt+Up Arrow
+	Nudge up x10 --- Default: Shift+Up Arrow
+	Nudge up x10 duplicate --- Default: Shift+Alt+Up Arrow
+	Pin Bottom Edge --- Default: Ctrl+Alt+Down Arrow
+	Pin Left Edge --- Default: Ctrl+Alt+Left Arrow
+	Pin Right Edge --- Default: Ctrl+Alt+Right Arrow
+	Pin Top Edge --- Default: Ctrl+Alt+Up Arrow
+	Resize Horizontally --- Default: Shift+Alt+H
+	Resize Vertically --- Default: Shift+Alt+V
+	Ruler Guide --- [none defined]
+	Select all Guides --- Default: Ctrl+Alt+G
+	Toggle Auto-Fit --- [none defined]
+	Toggle Live Edit Mode --- Default: 4
+	Vertical Align Bottom --- [none defined]
+	Vertical Align Center --- [none defined]
+	Vertical Align Top --- [none defined]
+	Vertical Distribute Bottom --- [none defined]
+	Vertical Distribute Center --- [none defined]
+	Vertical Distribute Space --- [none defined]
+	Vertical Distribute Top --- [none defined]
+	Vertical Margin Align Bottom --- [none defined]
+	Vertical Margin Align Center --- [none defined]
+	Vertical Margin Align Top --- [none defined]
+	Vertical Page Align Bottom --- [none defined]
+	Vertical Page Align Center --- [none defined]
+	Vertical Page Align Top --- [none defined]
+	Vertical Spread Align Bottom --- [none defined]
+	Vertical Spread Align Center --- [none defined]
+	Vertical Spread Align Top --- [none defined]
+	Zone Guide --- [none defined]
+
+Product area : Other
+	About this plug-in... --- [none defined]
+	Add --- [none defined]
+	Add Column Subtotal --- [none defined]
+	Add Conditional Layer --- [none defined]
+	Add Document Property --- [none defined]
+	Add Dynamic Chart --- [none defined]
+	Add Image Varaiable --- [none defined]
+	Add Image Variable --- [none defined]
+	Add Instance --- [none defined]
+	Add Output Comments --- [none defined]
+	Add SubTotal --- [none defined]
+	Add Table Variable --- [none defined]
+	Add Table Variable --- [none defined]
+	Add Text Variable --- [none defined]
+	Add Text Variable --- [none defined]
+	Add Total Page Number --- [none defined]
+	Add Universal Content --- [none defined]
+	Apply Content to All --- [none defined]
+	Apply Position to All --- [none defined]
+	Apply Sample Data --- [none defined]
+	Apply Size to All --- [none defined]
+	Autoflow --- [none defined]
+	Cancel Check Out --- [none defined]
+	Check In As --- [none defined]
+	Clone Instance --- [none defined]
+	Collapse Schema --- [none defined]
+	Collapse Schematic --- [none defined]
+	Content Group On/Off Criteria --- [none defined]
+	Create Content Group --- [none defined]
+	Create Content Loop --- [none defined]
+	Create Content Loop --- [none defined]
+	Create Folder --- [none defined]
+	Create Page Loop... --- [none defined]
+	Create Page Loop... --- [none defined]
+	Create Universal Content --- [none defined]
+	Create xPRS Package... --- Default: Shift+Alt+P
+	Current --- [none defined]
+	Current --- [none defined]
+	Current --- [none defined]
+	Define Array --- [none defined]
+	Define Array Item --- [none defined]
+	Define Array Item from Schema --- [none defined]
+	Define Array from Schema --- [none defined]
+	Define Variable --- [none defined]
+	Define Variable from Schema --- [none defined]
+	Delete --- [none defined]
+	Delete --- [none defined]
+	Delete All Nodes --- [none defined]
+	Delete Document Property --- [none defined]
+	Delete Items --- [none defined]
+	Diagnostic Information Collector... --- [none defined]
+	Document Description... --- [none defined]
+	Edit(Check Out) --- [none defined]
+	Expand Schema --- [none defined]
+	Expand Schematic --- [none defined]
+	Export Document Properties --- [none defined]
+	Export Document Properties to Server --- [none defined]
+	Export Variable Definitions to Server --- [none defined]
+	Export Variable Definitions... --- [none defined]
+	From ECM Server... --- [none defined]
+	From ECM Server... --- [none defined]
+	From ECM Server... --- [none defined]
+	From File... --- [none defined]
+	From File... --- [none defined]
+	From File... --- [none defined]
+	Help... --- [none defined]
+	Hide xPresso Markers --- [none defined]
+	If-Else Group Type --- [none defined]
+	Import Document Properties --- [none defined]
+	Import Document Properties from Server --- [none defined]
+	Import Variable Definitions from Server --- [none defined]
+	Import Variable Definitions... --- [none defined]
+	Index Setting... --- [none defined]
+	Insert Column Subtotal Value --- [none defined]
+	Load Markers from Server --- [none defined]
+	Load Markers... --- [none defined]
+	Load Schema from ECM Server --- [none defined]
+	Load Schema... --- [none defined]
+	Login --- [none defined]
+	Mark as Hidden --- [none defined]
+	Mark as Shown --- [none defined]
+	Open Universal Content --- [none defined]
+	Open(Read-Only) --- [none defined]
+	Optional Page --- [none defined]
+	Place from... --- [none defined]
+	Portable File Storage... --- [none defined]
+	Preview HTML --- [none defined]
+	Publish To PDF... --- [none defined]
+	Register... --- [none defined]
+	Remove Empty Lines --- [none defined]
+	Reset All as Shown --- [none defined]
+	Reset Variable Data --- [none defined]
+	Schematic --- [none defined]
+	Schematic Log Options... --- [none defined]
+	Set Criteria --- [none defined]
+	Set Marker... --- [none defined]
+	Set Variable As HyperLink --- [none defined]
+	Snapshot --- [none defined]
+	Sort Schematic --- [none defined]
+	Sort Variable Items --- [none defined]
+	Switch Group Type --- [none defined]
+	Table Row Splitting --- [none defined]
+	Table Widow/Orphan Rows.. --- [none defined]
+	Unset table row splitting --- [none defined]
+	Variable Formatting... --- [none defined]
+	Variable Table Formatting... --- [none defined]
+	View Log --- [none defined]
+	Whole Word Drop Caps --- [none defined]
+	xPresso... --- [none defined]
+
+Product area : Panel Menus
+	Animation: Convert to Motion Path --- [none defined]
+	Animation: Manage Presets... --- [none defined]
+	Animation: Preview Selection --- [none defined]
+	Animation: Save --- [none defined]
+	Articles: Add Document Content to Selected Articles --- [none defined]
+	Articles: Add Selection to Selected Articles --- [none defined]
+	Articles: Article Options... --- [none defined]
+	Articles: Delete --- [none defined]
+	Articles: Go to Item --- [none defined]
+	Articles: New Article... --- [none defined]
+	Articles: Use for Reading Order in Tagged PDF --- [none defined]
+	Assignment: Add to Assignment: New... --- [none defined]
+	Assignment: Assignment Options... --- [none defined]
+	Assignment: Cancel Check Out --- [none defined]
+	Assignment: Cancel Package --- [none defined]
+	Assignment: Change Assignment Location... --- [none defined]
+	Assignment: Check In --- [none defined]
+	Assignment: Check In All --- [none defined]
+	Assignment: Check Out --- [none defined]
+	Assignment: Delete Assignment --- [none defined]
+	Assignment: Go to Content --- [none defined]
+	Assignment: New Assignment... --- [none defined]
+	Assignment: Open Package... --- [none defined]
+	Assignment: Package for InCopy and Email --- [none defined]
+	Assignment: Package for InCopy... --- [none defined]
+	Assignment: Unlink Content --- [none defined]
+	Assignment: Update All Assignments --- [none defined]
+	Assignment: Update Content --- [none defined]
+	Assignment: Update Out-of-Date Assignments --- [none defined]
+	Assignment: Update Selected Assignments --- [none defined]
+	Book: Add Document... --- [none defined]
+	Book: Automatic Document Conversion --- [none defined]
+	Book: Book Page Numbering Options... --- [none defined]
+	Book: Close Book --- [none defined]
+	Book: Document Information... --- [none defined]
+	Book: Document Numbering Options... --- [none defined]
+	Book: Merge Identically Named Layers on Export --- [none defined]
+	Book: Remove Document --- [none defined]
+	Book: Replace Document... --- [none defined]
+	Book: Reveal in Explorer --- [none defined]
+	Book: Save Book --- [none defined]
+	Book: Save Book As... --- [none defined]
+	Book: Synchronize Options... --- [none defined]
+	Book: Update All Cross-References --- [none defined]
+	Book: Update All Numbers --- [none defined]
+	Book: Update Chapter & Paragraph Numbers --- [none defined]
+	Book: Update Page & Section Numbers --- [none defined]
+	Bookmarks: Delete Bookmark... --- [none defined]
+	Bookmarks: Go to Selected Bookmark --- [none defined]
+	Bookmarks: New Bookmark --- [none defined]
+	Bookmarks: Rename Bookmark --- [none defined]
+	Bookmarks: Sort Bookmarks --- [none defined]
+	Buttons: Actions: Animation --- [none defined]
+	Buttons: Actions: Clear Form --- [none defined]
+	Buttons: Actions: Go To Destination --- [none defined]
+	Buttons: Actions: Go To First Page --- [none defined]
+	Buttons: Actions: Go To Last Page --- [none defined]
+	Buttons: Actions: Go To Next Page --- [none defined]
+	Buttons: Actions: Go To Next State --- [none defined]
+	Buttons: Actions: Go To Next View --- [none defined]
+	Buttons: Actions: Go To Page --- [none defined]
+	Buttons: Actions: Go To Previous Page --- [none defined]
+	Buttons: Actions: Go To Previous State --- [none defined]
+	Buttons: Actions: Go To Previous View --- [none defined]
+	Buttons: Actions: Go To State --- [none defined]
+	Buttons: Actions: Go To URL --- [none defined]
+	Buttons: Actions: Open File --- [none defined]
+	Buttons: Actions: Print Form --- [none defined]
+	Buttons: Actions: Show/Hide Buttons and Forms --- [none defined]
+	Buttons: Actions: Sound --- [none defined]
+	Buttons: Actions: Submit Form --- [none defined]
+	Buttons: Actions: Video --- [none defined]
+	Buttons: Actions: View Zoom --- [none defined]
+	Buttons: Panel Options... --- [none defined]
+	Buttons: Reset All Buttons to Normal State --- [none defined]
+	Buttons: Sample Buttons And Forms --- [none defined]
+	Cell Styles: Break Link to Style --- [none defined]
+	Cell Styles: Clear Attributes Not Defined by Style --- [none defined]
+	Cell Styles: Clear Overrides --- [none defined]
+	Cell Styles: Close All Style Groups --- [none defined]
+	Cell Styles: Copy to Group... --- [none defined]
+	Cell Styles: Delete Style --- [none defined]
+	Cell Styles: Duplicate Style... --- [none defined]
+	Cell Styles: Load Cell Styles... --- [none defined]
+	Cell Styles: New Cell Style... --- [none defined]
+	Cell Styles: New Group from Styles... --- [none defined]
+	Cell Styles: New Style Group... --- [none defined]
+	Cell Styles: Open All Style Groups --- [none defined]
+	Cell Styles: Redefine Style --- [none defined]
+	Cell Styles: Sort by Name --- [none defined]
+	Cell Styles: Style Options... --- [none defined]
+	Character Styles: Break Link to Style --- [none defined]
+	Character Styles: Close All Style Groups --- [none defined]
+	Character Styles: Copy to Group... --- [none defined]
+	Character Styles: Delete Style --- [none defined]
+	Character Styles: Duplicate Style... --- [none defined]
+	Character Styles: Load Character Styles... --- [none defined]
+	Character Styles: New Character Style... --- [none defined]
+	Character Styles: New Group from Styles... --- [none defined]
+	Character Styles: New Style Group... --- [none defined]
+	Character Styles: Open All Style Groups --- [none defined]
+	Character Styles: Redefine Style --- Text: Shift+Ctrl+Alt+C
+	Character Styles: Sort by Name --- [none defined]
+	Character Styles: Style Options... --- [none defined]
+	Character: All Caps --- Default: Shift+Ctrl+K
+	Character: Ligatures --- [none defined]
+	Character: No Break --- [none defined]
+	Character: OpenType: All Small Caps --- [none defined]
+	Character: OpenType: Automatic Form --- [none defined]
+	Character: OpenType: Contextual Alternates --- [none defined]
+	Character: OpenType: Default Figure Style --- [none defined]
+	Character: OpenType: Denominator --- [none defined]
+	Character: OpenType: Discretionary Ligatures --- [none defined]
+	Character: OpenType: Final Form --- [none defined]
+	Character: OpenType: Fractions --- [none defined]
+	Character: OpenType: General Form --- [none defined]
+	Character: OpenType: Historical Alternates --- [none defined]
+	Character: OpenType: Initial Form --- [none defined]
+	Character: OpenType: Isolated Form --- [none defined]
+	Character: OpenType: Medial Form --- [none defined]
+	Character: OpenType: Numerator --- [none defined]
+	Character: OpenType: Ordinal --- [none defined]
+	Character: OpenType: Proportional Lining --- [none defined]
+	Character: OpenType: Proportional Oldstyle --- [none defined]
+	Character: OpenType: Set 1 --- [none defined]
+	Character: OpenType: Set 10 --- [none defined]
+	Character: OpenType: Set 11 --- [none defined]
+	Character: OpenType: Set 12 --- [none defined]
+	Character: OpenType: Set 13 --- [none defined]
+	Character: OpenType: Set 14 --- [none defined]
+	Character: OpenType: Set 15 --- [none defined]
+	Character: OpenType: Set 16 --- [none defined]
+	Character: OpenType: Set 17 --- [none defined]
+	Character: OpenType: Set 18 --- [none defined]
+	Character: OpenType: Set 19 --- [none defined]
+	Character: OpenType: Set 2 --- [none defined]
+	Character: OpenType: Set 20 --- [none defined]
+	Character: OpenType: Set 3 --- [none defined]
+	Character: OpenType: Set 4 --- [none defined]
+	Character: OpenType: Set 5 --- [none defined]
+	Character: OpenType: Set 6 --- [none defined]
+	Character: OpenType: Set 7 --- [none defined]
+	Character: OpenType: Set 8 --- [none defined]
+	Character: OpenType: Set 9 --- [none defined]
+	Character: OpenType: Slashed Zero --- [none defined]
+	Character: OpenType: Subscript/Inferior --- [none defined]
+	Character: OpenType: Superscript/Superior --- [none defined]
+	Character: OpenType: Swash --- [none defined]
+	Character: OpenType: Tabular Lining --- [none defined]
+	Character: OpenType: Tabular Oldstyle --- [none defined]
+	Character: OpenType: Titling Alternates --- [none defined]
+	Character: Show Options --- [none defined]
+	Character: Small Caps --- Default: Shift+Ctrl+H
+	Character: Strikethrough --- Default: Shift+Ctrl+/
+	Character: Strikethrough Options... --- [none defined]
+	Character: Subscript --- Default: Shift+Ctrl+Alt+=
+	Character: Superscript --- Default: Shift+Ctrl+=
+	Character: Underline --- Default: Shift+Ctrl+U
+	Character: Underline Options.... --- [none defined]
+	Color: Add to Swatches --- [none defined]
+	Color: Show Options --- [none defined]
+	Conditional Text: Condition Options... --- [none defined]
+	Conditional Text: Delete Condition... --- [none defined]
+	Conditional Text: Hide All --- [none defined]
+	Conditional Text: Hide Indicators on Conditional Text --- [none defined]
+	Conditional Text: Load Conditions and Sets... --- [none defined]
+	Conditional Text: Load Conditions... --- [none defined]
+	Conditional Text: New Condition... --- [none defined]
+	Conditional Text: Select All Unused --- [none defined]
+	Conditional Text: Show All --- [none defined]
+	Conditional Text: Show Indicators on Conditional Text --- [none defined]
+	Conditional Text: Show Options --- [none defined]
+	Conditional Text: Show and Print Indicators on Conditional Text --- [none defined]
+	Control: Customize... --- [none defined]
+	Control: Dock at Bottom --- [none defined]
+	Control: Dock at Top --- [none defined]
+	Control: Float --- [none defined]
+	Data Merge: Content Placement Options... --- [none defined]
+	Data Merge: Create Merged Document... --- [none defined]
+	Data Merge: Export To PDF --- [none defined]
+	Data Merge: Preview --- [none defined]
+	Data Merge: Remove Data Source --- [none defined]
+	Data Merge: Select Data Source... --- [none defined]
+	Data Merge: Show Log of Update Results --- [none defined]
+	Data Merge: Update Content in Data Fields --- [none defined]
+	Data Merge: Update Data Source --- [none defined]
+	Effects: Basic Feather... --- [none defined]
+	Effects: Bevel and Emboss... --- [none defined]
+	Effects: Clear Effects --- [none defined]
+	Effects: Directional Feather... --- [none defined]
+	Effects: Drop Shadow... --- [none defined]
+	Effects: Fill --- [none defined]
+	Effects: Gradient Feather... --- [none defined]
+	Effects: Inner Glow... --- [none defined]
+	Effects: Inner Shadow... --- [none defined]
+	Effects: Object --- [none defined]
+	Effects: Outer Glow... --- [none defined]
+	Effects: Satin... --- [none defined]
+	Effects: Show Options --- [none defined]
+	Effects: Stroke --- [none defined]
+	Effects: Text --- [none defined]
+	Effects: Transparency... --- [none defined]
+	Flattener Preview: Transparency Flattener Presets... --- [none defined]
+	Glyph: By CID / GID --- [none defined]
+	Glyph: By Unicode --- [none defined]
+	Glyph: Insert 2nd Most Recent Glyph --- [none defined]
+	Glyph: Insert 3rd Most Recent Glyph --- [none defined]
+	Glyph: Insert 4th Most Recent Glyph --- [none defined]
+	Glyph: Insert 5th Most Recent Glyph --- [none defined]
+	Glyph: Insert Most Recent Glyph --- [none defined]
+	Glyph: New Glyph Set... --- [none defined]
+	Glyph: Show Options --- [none defined]
+	Gradient: Show Options --- [none defined]
+	Hyperlinks: By Name --- [none defined]
+	Hyperlinks: By Type --- [none defined]
+	Hyperlinks: Cross-Reference Options... --- [none defined]
+	Hyperlinks: Delete Hyperlink/Cross-Reference --- [none defined]
+	Hyperlinks: Go To Destination --- [none defined]
+	Hyperlinks: Go To Source --- [none defined]
+	Hyperlinks: Hyperlink Destination Options... --- [none defined]
+	Hyperlinks: Hyperlink Options... --- [none defined]
+	Hyperlinks: Insert Cross-Reference... --- [none defined]
+	Hyperlinks: Manually --- [none defined]
+	Hyperlinks: New Hyperlink Destination... --- [none defined]
+	Hyperlinks: New Hyperlink From URL --- [none defined]
+	Hyperlinks: New Hyperlink... --- [none defined]
+	Hyperlinks: Relink Cross-Reference... --- [none defined]
+	Hyperlinks: Rename Hyperlink... --- [none defined]
+	Hyperlinks: Reset Hyperlink --- [none defined]
+	Hyperlinks: Small Panel Rows --- [none defined]
+	Hyperlinks: Update Cross-Reference --- [none defined]
+	Hyperlinks: Update Hyperlink --- [none defined]
+	Index: Add new index entry --- Text: Shift+Ctrl+Alt+[
+	Index: Add new index entry (reversed) --- Text: Shift+Ctrl+Alt+]
+	Index: Add new topic --- [none defined]
+	Index: Capitalize... --- [none defined]
+	Index: Delete --- [none defined]
+	Index: Duplicate... --- [none defined]
+	Index: Generate Index... --- [none defined]
+	Index: Go to Selected Marker --- [none defined]
+	Index: Import Topics... --- [none defined]
+	Index: New... --- Default: Ctrl+7
+	Index: Options... --- [none defined]
+	Index: Remove Unused Topics --- [none defined]
+	Index: Show Find Field --- [none defined]
+	Index: Show Unused Topics --- [none defined]
+	Index: Sort Options... --- [none defined]
+	Index: Update Preview --- [none defined]
+	Layer: Delete Layer --- [none defined]
+	Layer: Delete Unused Layers --- [none defined]
+	Layer: Duplicate Layer --- [none defined]
+	Layer: Layer Options... --- [none defined]
+	Layer: Merge Layers --- [none defined]
+	Layer: New Layer --- [none defined]
+	Layer: Paste Remembers Layers --- [none defined]
+	Layer: Select Item(s) --- [none defined]
+	Layer: Select and Fit Item --- [none defined]
+	Layer: Show All Layers --- [none defined]
+	Layer: Small Panel Rows --- [none defined]
+	Layer: Unlock All Layers --- [none defined]
+	Layout Window Preflight Status: Enable Preflight for All Documents --- [none defined]
+	Layout Window Preflight Status: Preflight Document --- [none defined]
+	Layout Window Status: Reveal in Bridge --- [none defined]
+	Layout Window Status: Reveal in Explorer --- [none defined]
+	Layout Window Status: Reveal in Mini Bridge --- [none defined]
+	Layout Window Status: Versions... --- [none defined]
+	Library: Add Item --- [none defined]
+	Library: Add Items on Page --- [none defined]
+	Library: Add Items on Page as Separate Objects --- [none defined]
+	Library: Close Library --- [none defined]
+	Library: Delete Item(s) --- [none defined]
+	Library: Item Information... --- [none defined]
+	Library: Large Thumbnail View --- [none defined]
+	Library: List View --- [none defined]
+	Library: Place Item(s) --- [none defined]
+	Library: Show All --- [none defined]
+	Library: Show Subset... --- [none defined]
+	Library: Thumbnail View --- [none defined]
+	Library: Update Library Item --- [none defined]
+	Library: by Name --- [none defined]
+	Library: by Newest --- [none defined]
+	Library: by Oldest --- [none defined]
+	Library: by Type --- [none defined]
+	Links: Auto-Size Link Information --- [none defined]
+	Links: Cancel Check Out --- [none defined]
+	Links: Check In --- [none defined]
+	Links: Check In Link... --- [none defined]
+	Links: Check Out --- [none defined]
+	Links: Copy All Link Information --- [none defined]
+	Links: Copy Full Path --- [none defined]
+	Links: Copy Info Field --- [none defined]
+	Links: Copy Info for Selected Links --- [none defined]
+	Links: Copy Link(s) To... --- [none defined]
+	Links: Copy Platform Style Path --- [none defined]
+	Links: Edit Original --- [none defined]
+	Links: Embed Link --- [none defined]
+	Links: Generate Live Captions --- [none defined]
+	Links: Generate Static Captions --- [none defined]
+	Links: Go To Link --- [none defined]
+	Links: Go To Source --- [none defined]
+	Links: Hide Info Thumbnail --- [none defined]
+	Links: Hide Thumbnail --- [none defined]
+	Links: Hide this Column --- [none defined]
+	Links: Link Options... --- [none defined]
+	Links: Panel Options... --- [none defined]
+	Links: Relink File Extension... --- [none defined]
+	Links: Relink to Folder... --- [none defined]
+	Links: Relink... --- [none defined]
+	Links: Reveal in Bridge --- [none defined]
+	Links: Reveal in Explorer --- [none defined]
+	Links: Reveal in Mini Bridge --- [none defined]
+	Links: Search for Missing Links --- [none defined]
+	Links: Show Link Information Pane --- [none defined]
+	Links: Update All Links --- [none defined]
+	Links: Update Link --- [none defined]
+	Links: Versions... --- [none defined]
+	Links: XMP File Info... --- [none defined]
+	Liquid Layout: Layout Adjustment... --- [none defined]
+	Media: PDF Options... --- [none defined]
+	Media: Video from URL... --- [none defined]
+	Notes: Go To Note Anchor --- [none defined]
+	Notes: Show Note Information --- [none defined]
+	Object States: Add Objects to State --- [none defined]
+	Object States: Delete State --- [none defined]
+	Object States: Hidden Until Triggered --- [none defined]
+	Object States: New State --- [none defined]
+	Object States: Panel Options... --- [none defined]
+	Object States: Paste Into State --- [none defined]
+	Object States: Release All States to Objects --- [none defined]
+	Object States: Release State to Objects --- [none defined]
+	Object States: Reset All Multi-state Objects to First State --- [none defined]
+	Object Styles: Break Link to Style --- [none defined]
+	Object Styles: Clear Attributes Not Defined by Style --- [none defined]
+	Object Styles: Clear Overrides --- [none defined]
+	Object Styles: Clear Overrides When Applying Style --- [none defined]
+	Object Styles: Close All Groups --- [none defined]
+	Object Styles: Copy to Group... --- [none defined]
+	Object Styles: Delete Styles... --- [none defined]
+	Object Styles: Duplicate Object Style... --- [none defined]
+	Object Styles: Load Object Styles... --- [none defined]
+	Object Styles: New Group from Styles... --- [none defined]
+	Object Styles: New Object Style... --- [none defined]
+	Object Styles: New Style Group... --- [none defined]
+	Object Styles: Open All Groups --- [none defined]
+	Object Styles: Redefine Style --- [none defined]
+	Object Styles: Style Options... --- [none defined]
+	Pages: Allow Document Pages to Shuffle --- [none defined]
+	Pages: Allow Master Item Overrides on Selection --- [none defined]
+	Pages: Apply Master to Pages... --- [none defined]
+	Pages: Controlled by Master --- [none defined]
+	Pages: Create Alternate Layout... --- [none defined]
+	Pages: Delete Alternate Layout... --- [none defined]
+	Pages: Delete Pages... --- [none defined]
+	Pages: Delete Pages... --- [none defined]
+	Pages: Delete Spread --- [none defined]
+	Pages: Detach All Objects from Master --- [none defined]
+	Pages: Duplicate Spread --- [none defined]
+	Pages: Guide-based --- [none defined]
+	Pages: Insert Pages... --- [none defined]
+	Pages: Liquid HTML5 Pagination Options... --- [none defined]
+	Pages: Load Master Pages... --- [none defined]
+	Pages: Master Options... --- [none defined]
+	Pages: Move Pages... --- [none defined]
+	Pages: New Master... --- [none defined]
+	Pages: Numbering & Section Options... --- [none defined]
+	Pages: Object-based --- [none defined]
+	Pages: Off --- [none defined]
+	Pages: Override All Master Page Items --- Default: Shift+Ctrl+Alt+L
+	Pages: Re-center --- [none defined]
+	Pages: Remove All Local Overrides --- [none defined]
+	Pages: Rotate Spread View: 180° --- [none defined]
+	Pages: Rotate Spread View: 90° CCW --- [none defined]
+	Pages: Rotate Spread View: 90° CW --- [none defined]
+	Pages: Rotate Spread View: Clear Rotation --- [none defined]
+	Pages: Rotate Spread View: To 180° --- [none defined]
+	Pages: Rotate Spread View: To 90° CCW --- [none defined]
+	Pages: Rotate Spread View: To 90° CW --- [none defined]
+	Pages: Save as Master --- [none defined]
+	Pages: Scale --- [none defined]
+	Pages: Show Master Items --- [none defined]
+	Pages: Spread Flattening: Custom... --- [none defined]
+	Pages: Spread Flattening: Default --- [none defined]
+	Pages: Spread Flattening: None (Ignore Transparency) --- [none defined]
+	Paragraph Styles: Break Link to Style --- [none defined]
+	Paragraph Styles: Clear Overrides --- [none defined]
+	Paragraph Styles: Close All Style Groups --- [none defined]
+	Paragraph Styles: Convert Style's Bullets and Numbering to Text --- [none defined]
+	Paragraph Styles: Copy to Group... --- [none defined]
+	Paragraph Styles: Delete Styles --- [none defined]
+	Paragraph Styles: Duplicate Style... --- [none defined]
+	Paragraph Styles: Load Paragraph Styles... --- [none defined]
+	Paragraph Styles: New Group from Styles... --- [none defined]
+	Paragraph Styles: New Paragraph Style... --- [none defined]
+	Paragraph Styles: New Style Group... --- [none defined]
+	Paragraph Styles: Open All Style Groups --- [none defined]
+	Paragraph Styles: Redefine Style --- Text: Shift+Ctrl+Alt+R
+	Paragraph Styles: Sort by Name --- [none defined]
+	Paragraph Styles: Style Options... --- [none defined]
+	Paragraph: Adobe Paragraph Composer --- [none defined]
+	Paragraph: Adobe Single-line Composer --- [none defined]
+	Paragraph: Adobe World-Ready Paragraph Composer --- [none defined]
+	Paragraph: Adobe World-Ready Single-line Composer --- [none defined]
+	Paragraph: Balance Ragged Lines --- [none defined]
+	Paragraph: Bullets and Numbering... --- [none defined]
+	Paragraph: Drop Caps and Nested Styles... --- Default: Ctrl+Alt+R
+	Paragraph: GREP Styles... --- [none defined]
+	Paragraph: Hyphenation... --- [none defined]
+	Paragraph: Ignore Optical Margin --- [none defined]
+	Paragraph: Justification... --- Default: Shift+Ctrl+Alt+J
+	Paragraph: Keep Options... --- Default: Ctrl+Alt+K
+	Paragraph: Only Align First Line to Grid --- [none defined]
+	Paragraph: Paragraph Rules... --- Default: Ctrl+Alt+J
+	Paragraph: Show Options --- [none defined]
+	Paragraph: Span Columns... --- [none defined]
+	Preflight: 100 --- [none defined]
+	Preflight: 25 --- [none defined]
+	Preflight: 50 --- [none defined]
+	Preflight: Define Profiles... --- [none defined]
+	Preflight: Enable Preflight for All Documents --- [none defined]
+	Preflight: No Limit --- [none defined]
+	Preflight: Preflight Options... --- [none defined]
+	Preflight: Save Report... --- [none defined]
+	Preview: Edit Preview Settings... --- [none defined]
+	Preview: Preview Document --- Default: Shift+Ctrl+Alt+Enter, Default: Shift+Ctrl+Alt+Num Enter
+	Preview: Preview Selection --- [none defined]
+	Preview: Preview Spread --- [none defined]
+	Preview: Test in Browser... --- [none defined]
+	Scripts: Delete Script File --- [none defined]
+	Scripts: Display Unsupported Files --- [none defined]
+	Scripts: Edit Script --- [none defined]
+	Scripts: Enable Redraw --- [none defined]
+	Scripts: Reveal in Explorer --- [none defined]
+	Scripts: Run Script --- [none defined]
+	Separations Preview: Desaturate Black --- [none defined]
+	Separations Preview: Show Single Plates in Black --- [none defined]
+	Stroke: Show Options --- [none defined]
+	Stroke: Stroke Styles... --- [none defined]
+	Swatches: Add Unnamed Colors --- [none defined]
+	Swatches: Delete Swatch... --- [none defined]
+	Swatches: Duplicate Swatch --- [none defined]
+	Swatches: Hide Options --- [none defined]
+	Swatches: Ink Manager... --- [none defined]
+	Swatches: Large Swatch --- [none defined]
+	Swatches: Load Swatches... --- [none defined]
+	Swatches: Merge Swatches --- [none defined]
+	Swatches: Name --- [none defined]
+	Swatches: New Color Swatch... --- [none defined]
+	Swatches: New Gradient Swatch... --- [none defined]
+	Swatches: New Mixed Ink Group... --- [none defined]
+	Swatches: New Mixed Ink Swatch... --- [none defined]
+	Swatches: New Tint Swatch... --- [none defined]
+	Swatches: Save Swatches... --- [none defined]
+	Swatches: Select All Unused --- [none defined]
+	Swatches: Small Name --- [none defined]
+	Swatches: Small Swatch --- [none defined]
+	Swatches: Swatch Options... --- [none defined]
+	Tab: Center-Justified Tab --- [none defined]
+	Tab: Clear All --- [none defined]
+	Tab: Decimal Tab --- [none defined]
+	Tab: Delete Tab --- [none defined]
+	Tab: Left-Justified Tab --- [none defined]
+	Tab: Repeat Tab --- [none defined]
+	Tab: Reset Indents --- [none defined]
+	Tab: Right-Justified Tab --- [none defined]
+	Table Styles: Break Link to Style --- [none defined]
+	Table Styles: Clear Overrides --- [none defined]
+	Table Styles: Close All Style Groups --- [none defined]
+	Table Styles: Copy to Group... --- [none defined]
+	Table Styles: Delete Style --- [none defined]
+	Table Styles: Duplicate Style... --- [none defined]
+	Table Styles: Load Table Styles... --- [none defined]
+	Table Styles: New Group from Styles... --- [none defined]
+	Table Styles: New Style Group... --- [none defined]
+	Table Styles: New Table Style... --- [none defined]
+	Table Styles: Open All Style Groups --- [none defined]
+	Table Styles: Redefine Style --- [none defined]
+	Table Styles: Sort by Name --- [none defined]
+	Table Styles: Style Options... --- [none defined]
+	Tags: Autotag --- Text: Shift+Ctrl+Alt+F7
+	Tags: Delete Tag... --- [none defined]
+	Tags: Load Tags... --- [none defined]
+	Tags: New Tag... --- [none defined]
+	Tags: Save Tags... --- [none defined]
+	Tags: Select All Unused Tags --- [none defined]
+	Tags: Small Panel Rows --- [none defined]
+	Tags: Tag Options... --- [none defined]
+	Tags: Untag --- [none defined]
+	Timing: Reassign to On Page Click --- [none defined]
+	Timing: Reassign to On Page Load --- [none defined]
+	Timing: Remove Item --- [none defined]
+	Transform: Clear Transformations --- [none defined]
+	Transform: Redefine Scaling as 100% --- [none defined]
+	Trap Presets: Assign Trap Preset... --- [none defined]
+	Trap Presets: Delete Presets --- [none defined]
+	Trap Presets: Duplicate Preset... --- [none defined]
+	Trap Presets: Load Trap Presets... --- [none defined]
+	Trap Presets: New Preset... --- [none defined]
+	Trap Presets: Preset Options... --- [none defined]
+	Trap Presets: Select All Unused --- [none defined]
+
+Product area : Scripts
+	Application --- [none defined]
+	Application: Indic Preferences.js --- [none defined]
+	Application: Samples --- [none defined]
+	Application: Samples: JavaScript --- [none defined]
+	Application: Samples: JavaScript: AddGuides.jsx --- [none defined]
+	Application: Samples: JavaScript: AddPoints.jsx --- [none defined]
+	Application: Samples: JavaScript: AdjustLayout.jsx --- [none defined]
+	Application: Samples: JavaScript: AlignToPage.jsx --- [none defined]
+	Application: Samples: JavaScript: AnimationEncyclopedia.jsx --- [none defined]
+	Application: Samples: JavaScript: BreakFrame.jsx --- [none defined]
+	Application: Samples: JavaScript: CornerEffects.jsx --- [none defined]
+	Application: Samples: JavaScript: CreateCharacterStyle.jsx --- [none defined]
+	Application: Samples: JavaScript: CropMarks.jsx --- [none defined]
+	Application: Samples: JavaScript: ExportAllStories.jsx --- [none defined]
+	Application: Samples: JavaScript: FindChangeByList.jsx --- [none defined]
+	Application: Samples: JavaScript: FindChangeSupport --- [none defined]
+	Application: Samples: JavaScript: ImageCatalog.jsx --- [none defined]
+	Application: Samples: JavaScript: MakeGrid.jsx --- [none defined]
+	Application: Samples: JavaScript: Neon.jsx --- [none defined]
+	Application: Samples: JavaScript: PathEffects.jsx --- [none defined]
+	Application: Samples: JavaScript: PlaceMultipagePDF.jsx --- [none defined]
+	Application: Samples: JavaScript: SelectObjects.jsx --- [none defined]
+	Application: Samples: JavaScript: SortParagraphs.jsx --- [none defined]
+	Application: Samples: JavaScript: SplitStory.jsx --- [none defined]
+	Application: Samples: JavaScript: TabUtilities.jsx --- [none defined]
+	Application: Samples: VBScript --- [none defined]
+	Application: Samples: VBScript: AddGuides.vbs --- [none defined]
+	Application: Samples: VBScript: AddPoints.vbs --- [none defined]
+	Application: Samples: VBScript: AdjustLayout.vbs --- [none defined]
+	Application: Samples: VBScript: AlignToPage.vbs --- [none defined]
+	Application: Samples: VBScript: AnimationEncyclopedia.vbs --- [none defined]
+	Application: Samples: VBScript: BreakFrame.vbs --- [none defined]
+	Application: Samples: VBScript: CornerEffects.vbs --- [none defined]
+	Application: Samples: VBScript: CreateCharacterStyle.vbs --- [none defined]
+	Application: Samples: VBScript: CropMarks.vbs --- [none defined]
+	Application: Samples: VBScript: ExportAllStories.vbs --- [none defined]
+	Application: Samples: VBScript: FindChangeByList.vbs --- [none defined]
+	Application: Samples: VBScript: FindChangeSupport --- [none defined]
+	Application: Samples: VBScript: ImageCatalog.vbs --- [none defined]
+	Application: Samples: VBScript: MakeGrid.vbs --- [none defined]
+	Application: Samples: VBScript: Neon.vbs --- [none defined]
+	Application: Samples: VBScript: PathEffects.vbs --- [none defined]
+	Application: Samples: VBScript: PlaceMultipagePDF.vbs --- [none defined]
+	Application: Samples: VBScript: SelectObjects.vbs --- [none defined]
+	Application: Samples: VBScript: SortParagraphs.vbs --- [none defined]
+	Application: Samples: VBScript: SplitStory.vbs --- [none defined]
+	Application: Samples: VBScript: TabUtilities.vbs --- [none defined]
+	User --- [none defined]
+	User: ClaquosBeta.jsx --- [none defined]
+	User: a.js --- [none defined]
+
+Product area : Structure Menu
+	Add Untagged Items --- [none defined]
+	DTD Options... --- [none defined]
+	Delete --- [none defined]
+	Delete DTD --- [none defined]
+	Edit --- [none defined]
+	Go to Item --- [none defined]
+	Import XML... --- [none defined]
+	Load DTD... --- [none defined]
+	Map Styles to Tags... --- [none defined]
+	Map Tags to Styles... --- [none defined]
+	New Attribute... --- [none defined]
+	New Comment... --- [none defined]
+	New Element... --- [none defined]
+	New Parent Element... --- [none defined]
+	New Processing Instruction... --- [none defined]
+	Select in Structure --- [none defined]
+	Show Attributes --- [none defined]
+	Show Comments --- [none defined]
+	Show Processing Instructions --- [none defined]
+	Show Text Snippets --- [none defined]
+	Tag Element... --- [none defined]
+	Tagging Preset Options... --- [none defined]
+	Untag Element --- [none defined]
+	Validate from Root Element --- [none defined]
+	Validate from Selected Element --- [none defined]
+	View DTD... --- [none defined]
+	View List of Errors... --- [none defined]
+
+Product area : Structure Navigation
+	Collapse element --- XML Selection: Left Arrow
+	Collapse element and child elements --- XML Selection: Alt+Left Arrow
+	Expand element --- XML Selection: Right Arrow
+	Expand element and child elements --- XML Selection: Alt+Right Arrow
+	Extend XML selection down --- XML Selection: Shift+Down Arrow
+	Extend XML selection up --- XML Selection: Shift+Up Arrow
+	Move XML selection down --- XML Selection: Down Arrow
+	Move XML selection up --- XML Selection: Up Arrow
+	Scroll structure pane down one screen --- XML Selection: Page Down
+	Scroll structure pane up one screen --- XML Selection: Page Up
+	Select first XML node --- XML Selection: Home
+	Select last XML node --- XML Selection: End
+	Select through first XML node --- XML Selection: Shift+Home
+	Select through last XML node --- XML Selection: Shift+End
+	View next validation error --- XML Selection: Ctrl+Right Arrow
+	View previous validation error --- XML Selection: Ctrl+Left Arrow
+
+Product area : Text and Tables
+	0° --- [none defined]
+	180° --- [none defined]
+	270° --- [none defined]
+	90° --- [none defined]
+	Align away from spine --- [none defined]
+	Align center --- Default: Shift+Ctrl+C
+	Align force justify --- Default: Shift+Ctrl+F
+	Align justify --- Default: Shift+Ctrl+J
+	Align left --- Default: Shift+Ctrl+L
+	Align right --- Default: Shift+Ctrl+R
+	Align to baseline grid --- Default: Shift+Ctrl+Alt+G
+	Align towards spine --- [none defined]
+	Apply bold --- Default: Shift+Ctrl+B
+	Apply italic --- Default: Shift+Ctrl+I
+	Apply normal --- Default: Shift+Ctrl+Y
+	Arrange by columns --- [none defined]
+	Arrange by rows --- [none defined]
+	Auto leading --- Default: Shift+Ctrl+Alt+A
+	Auto-hyphenate on/off --- Default: Shift+Ctrl+Alt+H
+	Clear --- Tables: Backspace
+	Clear All Overrides --- [none defined]
+	Clear Character Overrides --- [none defined]
+	Clear Paragraph Overrides --- [none defined]
+	Collapse All Footnotes --- [none defined]
+	Decrease baseline shift --- Text: Shift+Alt+Down Arrow
+	Decrease baseline shift x 5 --- Text: Shift+Ctrl+Alt+Down Arrow
+	Decrease horizontal scale --- [none defined]
+	Decrease horizontal scale x 5 --- [none defined]
+	Decrease kerning/tracking --- Text: Shift+Alt+Left Arrow, Text: Alt+Left Arrow
+	Decrease kerning/tracking x 5 --- Text: Ctrl+Alt+Left Arrow
+	Decrease leading --- Text: Alt+Up Arrow
+	Decrease leading x 5 --- Text: Ctrl+Alt+Up Arrow
+	Decrease point size --- Default: Shift+Ctrl+,
+	Decrease point size x 5 --- Default: Shift+Ctrl+Alt+,
+	Decrease vertical scale --- [none defined]
+	Decrease vertical scale x 5 --- [none defined]
+	Decrease word space --- Default: Ctrl+Alt+Backspace
+	Decrease word space x 5 --- Default: Shift+Ctrl+Alt+Backspace
+	Delete --- Tables: Delete
+	Delete one character to the left --- Text: Backspace, Text: Shift+Backspace
+	Delete one character to the right --- Text: Delete, Text: Shift+Delete
+	Delete one word to the left --- Text: Ctrl+Backspace
+	Delete one word to the right --- Text: Ctrl+Delete
+	Find Next --- Text: Shift+F2
+	GREP Find Next --- [none defined]
+	GREP Load Find and Find Next instance --- [none defined]
+	GREP Load Find with selected text --- [none defined]
+	GREP Load Replace with selected text --- [none defined]
+	GREP Replace with Change To text --- [none defined]
+	GREP Replace with Change To text and Find Next --- [none defined]
+	Increase baseline shift --- Text: Shift+Alt+Up Arrow
+	Increase baseline shift x 5 --- Text: Shift+Ctrl+Alt+Up Arrow
+	Increase horizontal scale --- [none defined]
+	Increase horizontal scale x 5 --- [none defined]
+	Increase kerning/tracking --- Text: Shift+Alt+Right Arrow, Text: Alt+Right Arrow
+	Increase kerning/tracking x 5 --- Text: Ctrl+Alt+Right Arrow
+	Increase leading --- Text: Alt+Down Arrow
+	Increase leading x 5 --- Text: Ctrl+Alt+Down Arrow
+	Increase point size --- Default: Shift+Ctrl+.
+	Increase point size x 5 --- Default: Shift+Ctrl+Alt+.
+	Increase vertical scale --- [none defined]
+	Increase vertical scale x 5 --- [none defined]
+	Increase word space --- Default: Ctrl+Alt+\
+	Increase word space x 5 --- Default: Shift+Ctrl+Alt+\
+	Insert Anchored Object/Go to Anchor Marker --- [none defined]
+	Insert Column --- [none defined]
+	Insert Row --- [none defined]
+	Keep with Next Row --- [none defined]
+	Load Find and Find Next instance --- Text: Shift+F1
+	Load Find with selected text --- Text: Ctrl+F1
+	Load Replace with selected text --- Text: Ctrl+F2
+	Move Down --- Tables: Down Arrow
+	Move Left --- Tables: Left Arrow
+	Move Right --- Tables: Right Arrow
+	Move Up --- Tables: Up Arrow
+	Move down one line --- Text: Down Arrow
+	Move to First Cell in Column --- Tables: Alt+Page Up
+	Move to First Cell in Row --- Tables: Alt+Home
+	Move to First Row in Frame --- Tables: Page Up
+	Move to Last Cell in Column --- Tables: Alt+Page Down
+	Move to Last Cell in Row --- Tables: Alt+End
+	Move to Last Row in Frame --- Tables: Page Down
+	Move to Next Cell --- Tables: Tab
+	Move to Previous Cell --- Tables: Shift+Tab
+	Move to beginning of story --- Default: Ctrl+Home
+	Move to end of story --- Default: Ctrl+End
+	Move to the end of the line --- Text: End
+	Move to the left one character --- Text: Left Arrow
+	Move to the left one word --- Text: Ctrl+Left Arrow
+	Move to the next paragraph --- Text: Ctrl+Down Arrow
+	Move to the previous paragraph --- Text: Ctrl+Up Arrow
+	Move to the right one character --- Text: Right Arrow
+	Move to the right one word --- Text: Ctrl+Right Arrow
+	Move to the start of the line --- Text: Home
+	Move up one line --- Text: Up Arrow
+	Normal horizontal text scale --- Default: Shift+Ctrl+X
+	Normal vertical text scale --- Default: Shift+Ctrl+Alt+X
+	Recompose all stories --- Default: Ctrl+Alt+/
+	Recompose all stories immediately --- [none defined]
+	Replace with Change To text --- Text: Ctrl+F3
+	Replace with Change To text and Find Next --- Text: Shift+F3
+	Reset kerning and tracking --- Text: Ctrl+Alt+Q
+	Select Cells Above --- Tables: Shift+Up Arrow
+	Select Cells Below --- Tables: Shift+Down Arrow
+	Select Cells to the Left --- Tables: Shift+Left Arrow
+	Select Cells to the Right --- Tables: Shift+Right Arrow
+	Select line --- Text: Shift+Ctrl+\
+	Select one character to the left --- Text: Shift+Left Arrow
+	Select one character to the right --- Text: Shift+Right Arrow
+	Select one line above --- Text: Shift+Up Arrow
+	Select one line below --- Text: Shift+Down Arrow
+	Select one paragraph before --- Text: Shift+Ctrl+Up Arrow
+	Select one paragraph forward --- Text: Shift+Ctrl+Down Arrow
+	Select one word to the left --- Text: Shift+Ctrl+Left Arrow
+	Select one word to the right --- Text: Shift+Ctrl+Right Arrow
+	Select to beginning of story --- Text: Shift+Ctrl+Home
+	Select to end of story --- Text: Shift+Ctrl+End
+	Select to the end of the line --- Text: Shift+End
+	Select to the start of the line --- Text: Shift+Home
+	Start Row on Next Column --- Tables: Num Enter
+	Start Row on Next Frame --- Tables: Shift+Num Enter
+	Switch composer --- [none defined]
+	Toggle Adjust Spacing Automatically When Cutting and Pasting --- [none defined]
+	Toggle Autogrow --- [none defined]
+	Toggle Cell/Text Selection --- Tables: Escape
+	Toggle Drag and Drop Text Preference --- [none defined]
+	Toggle Typographer's Quotes Preference --- Default: Shift+Ctrl+Alt+'
+	Update missing font list --- Default: Shift+Ctrl+Alt+/
+
+Product area : Tools
+	Add Anchor Point Tool --- Default: =
+	Apply Color --- Default: ,
+	Apply Gradient --- Default: .
+	Apply None --- Default: Num /, Default: /
+	Apply default fill and stroke colors --- Default: D
+	Convert Direction Point Tool --- Default: Shift+C
+	Delete Anchor Point Tool --- Default: -
+	Direct Selection Tool --- Default: A
+	Ellipse Frame Tool --- [none defined]
+	Ellipse Tool --- Default: L
+	Erase Tool --- [none defined]
+	Eyedropper Tool --- Default: I
+	Free Transform Tool --- Default: E
+	Gap Tool --- Default: U
+	Gradient Feather Tool --- Default: Shift+G
+	Gradient Swatch Tool --- Default: G
+	Hand Tool --- Default: H
+	Line Tool --- Default: \
+	Measure Tool --- Default: K
+	Note Tool --- [none defined]
+	Page Tool --- Default: Shift+P
+	Pen Tool --- Default: P
+	Pencil Tool --- Default: N
+	Polygon Frame Tool --- [none defined]
+	Polygon Tool --- [none defined]
+	Rectangle Frame Tool --- Default: F
+	Rectangle Tool --- Default: M
+	Rotate Tool --- Default: R
+	Scale Tool --- Default: S
+	Scissors Tool --- Default: C
+	Selection Tool --- Default: V, Text: Escape
+	Shear Tool --- Default: O
+	Smooth Tool --- [none defined]
+	Swap fill and stroke activation --- Default: X
+	Swap fill and stroke colors --- Default: Shift+X
+	Toggle Content Collector and Content Placer --- Default: B
+	Toggle Text and Object Control --- Default: J
+	Toggle view setting between default and preview --- Default: W
+	Tool Hints --- [none defined]
+	Type Tool --- Default: T
+	Type on a Path Tool --- Default: Shift+T
+	Zoom Tool --- Default: Z
+
+Product area : Views, Navigation
+	200% size --- Default: Ctrl+2
+	400% size --- Default: Ctrl+4
+	50% size --- Default: Ctrl+5
+	Access page number box --- [none defined]
+	Access zoom percentage box --- [none defined]
+	Activate last-used field in panel --- Default: Ctrl+Alt+`
+	Close all --- Default: Shift+Ctrl+Alt+W
+	Close document --- Default: Shift+Ctrl+W
+	First Spread --- Default: Shift+Alt+Page Up, Default: Home, Presentation Mode: Home
+	Fit Selection in Window --- Default: Ctrl+Alt+=
+	Force redraw --- Default: Shift+F5
+	Go to first frame in thread --- Default: Shift+Ctrl+Alt+Page Up
+	Go to last frame in thread --- Default: Shift+Ctrl+Alt+Page Down
+	Go to next frame in thread --- Default: Ctrl+Alt+Page Down
+	Go to previous frame in thread --- Default: Ctrl+Alt+Page Up
+	Grids in Back --- [none defined]
+	Guides in Back --- [none defined]
+	Horizontal Ruler: Agates --- [none defined]
+	Horizontal Ruler: Centimeters --- [none defined]
+	Horizontal Ruler: Ciceros --- [none defined]
+	Horizontal Ruler: Custom... --- [none defined]
+	Horizontal Ruler: Inches --- [none defined]
+	Horizontal Ruler: Inches Decimal --- [none defined]
+	Horizontal Ruler: Millimeters --- [none defined]
+	Horizontal Ruler: Picas --- [none defined]
+	Horizontal Ruler: Pixels --- [none defined]
+	Horizontal Ruler: Points --- [none defined]
+	Last Spread --- Default: Shift+Alt+Page Down, Default: End, Presentation Mode: End
+	Lock Zero Point --- [none defined]
+	New default document --- Default: Ctrl+Alt+N
+	Next window --- Default: Ctrl+Tab, Default: Ctrl+`, Presentation Mode: Ctrl+Tab, Presentation Mode: Ctrl+`
+	Open context menu --- Default: Shift+F10
+	Open/Close all panels in side tabs --- Default: Shift+Ctrl+Alt+Tab
+	Open/Close panels in left side tabs --- [none defined]
+	Open/Close panels in right side tabs --- [none defined]
+	Previous window --- Default: Shift+Ctrl+Tab, Default: Shift+Ctrl+`, Presentation Mode: Shift+Ctrl+Tab, Presentation Mode: Shift+Ctrl+`
+	Ruler On Spine --- [none defined]
+	Ruler Per Page --- [none defined]
+	Ruler Per Spread --- [none defined]
+	Save all --- Default: Shift+Ctrl+Alt+S
+	Scroll down one screen --- Default: Page Down, Text: Page Down
+	Scroll up one screen --- Default: Page Up, Text: Page Up
+	Show 1st spot plate --- Default: Shift+Ctrl+Alt+5
+	Show 2nd spot plate --- Default: Shift+Ctrl+Alt+6
+	Show 3rd spot plate --- Default: Shift+Ctrl+Alt+7
+	Show 4th spot plate --- [none defined]
+	Show 5th spot plate --- [none defined]
+	Show Black plate --- Default: Shift+Ctrl+Alt+4
+	Show Cyan plate --- Default: Shift+Ctrl+Alt+1
+	Show Magenta plate --- Default: Shift+Ctrl+Alt+2
+	Show Yellow plate --- Default: Shift+Ctrl+Alt+3
+	Show all plates --- Default: Shift+Ctrl+Alt+`
+	Show/Hide all panels --- Default: Tab
+	Show/Hide all panels except toolbox --- Default: Shift+Tab
+	Suppress overrides (view optimized) --- [none defined]
+	Toggle Character and Paragraph Modes in Control Panel --- Default: Ctrl+Alt+7
+	Toggle Keyboard Focus in Control Panel --- Default: Ctrl+6
+	Toggle Measurement System --- Default: Shift+Ctrl+Alt+U
+	Toggle between current and previous views --- Default: Ctrl+Alt+2
+	Vertical Ruler: Agates --- [none defined]
+	Vertical Ruler: Centimeters --- [none defined]
+	Vertical Ruler: Ciceros --- [none defined]
+	Vertical Ruler: Custom... --- [none defined]
+	Vertical Ruler: Inches --- [none defined]
+	Vertical Ruler: Inches Decimal --- [none defined]
+	Vertical Ruler: Millimeters --- [none defined]
+	Vertical Ruler: Picas --- [none defined]
+	Vertical Ruler: Pixels --- [none defined]
+	Vertical Ruler: Points --- [none defined]
