@@ -108,7 +108,7 @@ NodeID_rv IDSCTreeHierAdapter::GetParentNode(const NodeID& node) const
 
 		InterfacePtr<IIDSCDataModel> model(workspace, UseDefaultIID());
 		ASSERT(model);
-		UID uid = nodeID.GetUID();
+		UID uid = nodeID->GetUID();
 		if(nil == model || uid == model->GetRootUID())
 			break;
 
@@ -139,7 +139,7 @@ int32 IDSCTreeHierAdapter::GetNumChildren(const NodeID& node) const
 
 		InterfacePtr<IIDSCDataModel> model(workspace, UseDefaultIID());
 		ASSERT(model);
-		UID uid = nodeID.GetUID();
+		UID uid = nodeID->GetUID();
 		if(nil == model)
 			break;
 
@@ -165,7 +165,7 @@ NodeID_rv IDSCTreeHierAdapter::GetNthChild(
 		if(nil == workspace)
 			break;
 
-		InterfacePtr<IIDSCDataModel> model(workSpace, UseDefaultIID());
+		InterfacePtr<IIDSCDataModel> model(workspace, UseDefaultIID());
 		ASSERT(model);
 		if(nil == model)
 			break;
@@ -199,7 +199,7 @@ int32 IDSCTreeHierAdapter::GetChildIndex(
 		}
 		InterfacePtr<IIDSCDataModel> model(this, UseDefaultIID());
 		ASSERT(model);				
-		return model->GetChildIndexFor(parentFileNodeID->GetPath(), childFileNodeID->GetPath());			
+		return model->GetChildIndexFor(parentFileNodeID->GetUID(), childFileNodeID->GetUID());			
 	} while(kFalse);
 
 	return (-1);
@@ -210,36 +210,7 @@ int32 IDSCTreeHierAdapter::GetChildIndex(
 */
 NodeID_rv IDSCTreeHierAdapter::GetGenericNodeID() const
 {
-	return UIDNodeID::Create();
+	return UIDNodeID::Create(kInvalidUID);
 }
-
-
-/* getTargetPath
-
-PMString IDSCTreeHierAdapter::getTargetPath() const
-{
-	PMString retval="";
-	do
-	{
-		InterfacePtr<IWorkspace> 
-			iSessionWorkspace(GetExecutionContextSession()->QueryWorkspace());
-		ASSERT(iSessionWorkspace);
-		if(iSessionWorkspace == nil)
-		{
-			break;
-		}
-		InterfacePtr<IPnlTrvOptions>
-			iOptions(iSessionWorkspace, UseDefaultIID());
-		ASSERT(iOptions);
-		if(!iOptions)
-		{
-			break;
-		}
-		retval = iOptions->GetNthOption(0);
-		
-	} while(kFalse);
-	return retval;
-}
-*/
 
 //	end, File: IDSCTreeHierAdapter.cpp

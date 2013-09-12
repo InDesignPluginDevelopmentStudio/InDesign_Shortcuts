@@ -10,13 +10,11 @@ public:
 	enum EType{E_None = -1, E_Root, E_ProductArea, E_Menu};
 
 	IDSCTreeNode();
-	IDSCTreeNode(const PMString& name, EType type, UID parentUID, const PMString& shortcuts = kNullString);
+//	IDSCTreeNode(const PMString& name, EType type, UID parentUID, const PMString& shortcuts = kNullString);
 
-	void SetType(EType type);
-	EType GetType() const;
+	void SetType(EType type) { _nodeType = type; }
+	EType GetType() const { return _nodeType; }
 
-	void SetParentUID(UID parentUID);
-	UID GetParentUID() const;
 
 	void SetShortcuts(const PMString& shortcuts);
 	PMString GetShortcuts() const;
@@ -31,5 +29,6 @@ private:
 	EType _nodeType;
 
 	PMString _shortcuts;
+
 };
 #endif

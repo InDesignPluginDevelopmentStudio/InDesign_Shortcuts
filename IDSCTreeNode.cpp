@@ -12,17 +12,17 @@ IDSCTreeNode::IDSCTreeNode():
 {
 }
 
-IDSCTreeNode::IDSCTreeNode(const PMString& name, 
-						EType type, 
-						UID parentUID, 
-						const PMString& shortcuts)
-{
-	this->SetUID(S_Node_UID++);
-	this->SetName(name);
-	this->SetType(type);
-	this->SetParentUID(parentUID);
-	this->SetShortcuts(shortcuts);
-}
+//IDSCTreeNode::IDSCTreeNode(const PMString& name, 
+//						EType type, 
+//						UID parentUID, 
+//						const PMString& shortcuts)
+//{
+//	this->SetUID(S_Node_UID++);
+//	this->SetName(name);
+//	this->SetType(type);
+//	this->SetParent(parentUID);
+//	this->SetShortcuts(shortcuts);
+//}
 
 void IDSCTreeNode::SetShortcuts(const PMString& shortcuts)
 {
@@ -46,7 +46,7 @@ void IDSCTreeNode::DeepCopy(const IDSCTreeNode& node)
 {
 	this->SetUID(S_Node_UID++);
 	this->SetName(node.GetName());
-	this->SetParentUID(node.GetParentUID());
+	this->SetParent(node.GetParent());
 	this->SetShortcuts(node.GetShortcuts());
 	this->SetType(node.GetType());
 }

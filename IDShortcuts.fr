@@ -87,7 +87,7 @@ resource IgnoreTags(1)
 {
 	kImplementationIDSpace,
 	{
-		kIDShortcutsDataModelImpl,
+		kIDSCDataModelImpl,
 	}
 };
 
@@ -129,9 +129,9 @@ resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID)
 	AddIn
 	{
 		kWorkspaceBoss,
-		kInvalidBoss,
+		kInvalidClass,
 		{
-			IID_IIDSHORTCUTSDATAMODEL, kIDShortcutsDataModelImpl,
+			IID_IIDSHORTCUTSDATAMODEL, kIDSCDataModelImpl,
 		}
 	},
 
@@ -474,7 +474,7 @@ resource IDSchortcutsTreeNodeWidget(kIDShortcutsTreeNodeWidgetRsrcID + index_enU
 			{
 				IconSuiteWidget
 				(
-					kPnlTrvIconWidgetId,		// WidgetId,
+					0,		// WidgetId,
 					kPMRsrcID_None,
 					kBindLeft,					// Frame binding
 					Frame(0,0,18,18),			// Frame

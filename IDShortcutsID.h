@@ -110,7 +110,7 @@ DECLARE_PMID(kImplementationIDSpace, kIDShortcutsActionComponentImpl, kIDShortcu
 DECLARE_PMID(kImplementationIDSpace, kIDShortcutsTVWidgetMgrImpl, kIDShortcutsPrefix + 1)
 DECLARE_PMID(kImplementationIDSpace, kIDShortcutsTreeObserverImpl, kIDShortcutsPrefix + 2)
 DECLARE_PMID(kImplementationIDSpace, kIDShortcutsTVHierarchyAdapterImpl, kIDShortcutsPrefix + 3)
-DECLARE_PMID(kImplementationIDSpace, kIDShortcutsDataModelImpl, kIDShortcutsPrefix + 4)
+DECLARE_PMID(kImplementationIDSpace, kIDSCDataModelImpl, kIDShortcutsPrefix + 4)
 //DECLARE_PMID(kImplementationIDSpace, kIDShortcutsImpl, kIDShortcutsPrefix + 5)
 //DECLARE_PMID(kImplementationIDSpace, kIDShortcutsImpl, kIDShortcutsPrefix + 6)
 //DECLARE_PMID(kImplementationIDSpace, kIDShortcutsImpl, kIDShortcutsPrefix + 7)
