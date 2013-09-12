@@ -1,18 +1,18 @@
 //========================================================================================
 //  
-//  $File: //depot/indesign_3.x/dragonfly/source/sdksamples/paneltreeview/WinFileSystemIterator.cpp $
+//  $File: //depot/indesign_8.0/gm/source/sdksamples/paneltreeview/WinFileSystemIterator.cpp $
 //  
 //  Owner: Adobe Developer Technologies
 //  
-//  $Author: Jsun $
+//  $Author: alokumar $
 //  
-//  $DateTime: 2003/12/18 11:20:39 $
+//  $DateTime: 2012/02/15 11:23:10 $
 //  
-//  $Revision: 2 $
+//  $Revision: #1 $
 //  
-//  $Change: 237988 $
+//  $Change: 817912 $
 //  
-//  Copyright 1997-2003 Adobe Systems Incorporated. All rights reserved.
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
 //  
 //  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
 //  with the terms of the Adobe license agreement accompanying it.  If you have received
@@ -25,35 +25,26 @@
 
 #ifdef WINDOWS 
 #include "WinFileSystemIterator.h"
-#include "FileUtils.h"
 
 // General includes:
 #include "K2Vector.tpp"
+#include "CAlert.h"
+#include "FileUtils.h"
 
 /* SetStartingPath
 */
-void WinFileSystemIterator::SetStartingPath(const UniFile&  fileSpec)
+void WinFileSystemIterator::SetStartingPath(const IDFile& fileSpec)
 {
 	fSpec = fileSpec;
-	PMString temp = FileUtils::SysFileToPMString(fileSpec);
-	CharCounter len = temp.CharCount();
-	for(CharCounter i = len-1; i>=0; i--)
-	{
-		if(temp.GetChar(i) == '\\')
-		{
-			temp.Remove(i, len-i);	
-			break;
-		}
-	}
-	
-	fPath.SetTString(temp.GrabTString());
 }
 
 
 /* FindFirstFile
 */
-bool16 WinFileSystemIterator::FindFirstFile(UniFile&  resultFile)
+bool16 WinFileSystemIterator::FindFirstFile(IDFile& resultFile, PMString filter)
 {
+	fFilter = filter;
+
 	fFilesFound=0;
 	if (fhFindFile != INVALID_HANDLE_VALUE)
 	{
@@ -62,16 +53,17 @@ bool16 WinFileSystemIterator::FindFirstFile(UniFile&  resultFile)
 	}
 
 	WIN32_FIND_DATA findData;
-	fhFindFile = ::FindFirstFile(fSpec.GrabTString(), &findData);
+    PMString fldrFilter = fSpec.GetString();
+    fldrFilter.Append(filter);
+	fhFindFile = ::FindFirstFile(fldrFilter.GrabTString(), &findData);
 	
 	if (fhFindFile != INVALID_HANDLE_VALUE)
 	{
 		PMString fileName;
 		fileName.SetTString((LPTSTR)&findData.cFileName);
-		PMString strPath=FileUtils::SysFileToPMString(fPath);
-		strPath.Append(TEXT('\\'));
-		strPath += fileName ;
-		resultFile.SetString( strPath );
+
+		resultFile = fSpec ;
+		FileUtils::AppendPath(&resultFile, fileName);
 		fFilesFound++;
 	}
 
@@ -81,7 +73,7 @@ bool16 WinFileSystemIterator::FindFirstFile(UniFile&  resultFile)
 	
 /* FindNextFile
 */
-bool16 WinFileSystemIterator::FindNextFile(UniFile&  resultFile)
+bool16 WinFileSystemIterator::FindNextFile(IDFile& resultFile)
 {
 	if (fFilesFound > eMaxFolderItemsPerSingleIteration)
 	{
@@ -94,10 +86,10 @@ bool16 WinFileSystemIterator::FindNextFile(UniFile&  resultFile)
 	{
 		PMString fileName;
 		fileName.SetTString(findData.cFileName);
-		PMString strPath=FileUtils::SysFileToPMString(fPath);
-		strPath.Append(TEXT('\\'));
-		strPath += fileName;
-		resultFile.SetString(strPath);
+	
+		resultFile = fSpec ;
+		FileUtils::AppendPath(&resultFile, fileName);
+
 		fFilesFound++;
 	}
 
@@ -112,22 +104,17 @@ bool16 WinFileSystemIterator::FindNextFile(UniFile&  resultFile)
 
 /* IsDirectory
 */
-bool16 WinFileSystemIterator::IsDirectory(const UniFile&  fileSpec)
+bool16 WinFileSystemIterator::IsDirectory(const IDFile& fileSpec)
 {
-	if (::GetFileAttributes(fileSpec.GrabTString()) & FILE_ATTRIBUTE_DIRECTORY)
-	{
-		return kTrue;
-	}
-
- 	return kFalse;
+	return fileSpec.GetAttribute(IDFile::kDirectory);
 }
  
 
 /* GetImmediateChildren
 */
 void WinFileSystemIterator::GetImmediateChildren(
-	const UniFile&  parentSysFile, 
-	K2Vector<UniFile>& outFileSpecs,
+	const IDFile& parentSysFile, 
+	K2Vector<IDFile>& outFileSpecs,
 	const int32 maxFolderItemsPerBulkCall){
 	const PMString dot(".");
 	const PMString doubleDot("..");
@@ -138,9 +125,10 @@ void WinFileSystemIterator::GetImmediateChildren(
 	{
 
 		WIN32_FIND_DATA findData;
-		PMString filter=FileUtils::SysFileToPMString(parentSysFile);
-		filter += "\\*.*";
-		HANDLE hSearch = ::FindFirstFile(filter.GrabTString(), &findData); 
+		PMString filter("\\*.*");
+		PMString fldrFilter = parentSysFile.GetString();
+		fldrFilter.Append(filter);
+		HANDLE hSearch = ::FindFirstFile(fldrFilter.GrabTString(), &findData); 
 		if (hSearch == INVALID_HANDLE_VALUE)
 		{ 
 			break;
@@ -151,15 +139,13 @@ void WinFileSystemIterator::GetImmediateChildren(
 		while (hasNext && filesFound < maxFolderItemsPerBulkCall) 
 		{ 
 			
-			UniFile resultFile;
+			IDFile resultFile;
 			PMString fileName;
 			fileName.SetTString(findData.cFileName);
 			if(fileName != dot && fileName != doubleDot)
-			{
-				PMString strPath=FileUtils::SysFileToPMString(parentSysFile);
-				strPath.Append(TEXT('\\'));
-				strPath += fileName ;
-				resultFile.SetString(strPath);
+			{				
+				resultFile = parentSysFile ;
+				FileUtils::AppendPath(&resultFile, fileName);
 				outFileSpecs.push_back(resultFile);
 				filesFound++;
 			}

@@ -1,18 +1,18 @@
 //========================================================================================
 //  
-//  $File: //depot/indesign_3.x/dragonfly/source/sdksamples/paneltreeview/MacFileSystemIterator.cpp $
+//  $File: //depot/indesign_8.0/gm/source/sdksamples/paneltreeview/MacFileSystemIterator.cpp $
 //  
 //  Owner: Adobe Developer Technologies
 //  
-//  $Author: Jsun $
+//  $Author: alokumar $
 //  
-//  $DateTime: 2003/12/18 11:20:39 $
+//  $DateTime: 2012/02/15 11:23:10 $
 //  
-//  $Revision: 2 $
+//  $Revision: #1 $
 //  
-//  $Change: 237988 $
+//  $Change: 817912 $
 //  
-//  Copyright 1997-2003 Adobe Systems Incorporated. All rights reserved.
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
 //  
 //  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
 //  with the terms of the Adobe license agreement accompanying it.  If you have received
@@ -21,15 +21,12 @@
 //  
 //========================================================================================
 
-#include "VCPluginHeaders.h"
+#include "VCPlugInHeaders.h"
 #ifdef MACINTOSH
 #include "MacFileSystemIterator.h"
 #include "K2Vector.tpp"
-
-
 #include "FileUtils.h"
 #include "MacFileUtils.h"
-
 
 // See http://developer.apple.com/techpubs/macosx/Carbon/Files/FileManager/File_Manager/index.html
 // and http://developer.apple.com/techpubs/macosx/Carbon/Files/FileManager/File_Manager/Functions/Searching_a__log_Iterator.html
@@ -47,30 +44,18 @@ MacFileSystemIterator::~MacFileSystemIterator()
 
 /*
 */
-void MacFileSystemIterator::SetStartingPath(const UniFile&  fileSpec)
+void MacFileSystemIterator::SetStartingPath(const IDFile& fileSpec)
 {
-#ifdef INDESIGNCS5_5
-	FileUtils::IDFileToFSSpec(fileSpec, fStartingFile);
-#else
-	FileUtils::IDFileToFSRef(fileSpec, fStartingFile);
-#endif
+	FileUtils::IDFileToFSRef(fileSpec, fStartingFileRef);
 }
 
 /*
 */
-bool16 MacFileSystemIterator :: FindFirstFile(UniFile&  resultFile)
+bool16 MacFileSystemIterator :: FindFirstFile(IDFile& resultFile, PMString filter)
 {
 	do {	
-		FSRef folderRef;
-#ifdef INDESIGNCS5_5
-	  	OSErr specToRefErr = FSpMakeFSRef( &fStartingFile, &folderRef );
-	     	ASSERT(specToRefErr == noErr);
-		if(specToRefErr != noErr) {
-			break;
-		}
-#else
-		folderRef = fStartingFile;
-#endif
+		FSRef folderRef = fStartingFileRef;
+	  	
 		OSErr startIterErr = FSOpenIterator (
 		    	&folderRef,
 		  	kFSIterateFlat,
@@ -86,7 +71,7 @@ bool16 MacFileSystemIterator :: FindFirstFile(UniFile&  resultFile)
 	
 /*
 */
-bool16 MacFileSystemIterator :: FindNextFile(UniFile&  resultFile)
+bool16 MacFileSystemIterator :: FindNextFile(IDFile& resultFile)
 {
 	bool16 itemsLeftToIterate = kFalse;
 	do {
@@ -95,7 +80,7 @@ bool16 MacFileSystemIterator :: FindNextFile(UniFile&  resultFile)
 		FSCatalogInfo*  foundCatInfos = new FSCatalogInfo [kFolderItemsPerBulkCall];		
 		FSRef*		  foundFSRefs = new FSRef [kFolderItemsPerBulkCall];			
 		HFSUniStr255*   foundNames = new HFSUniStr255[kFolderItemsPerBulkCall];			
-		FSSpec*		  fileSpecs = new FSSpec[kFolderItemsPerBulkCall];			
+		//FSSpec*		  fileSpecs = new FSSpec[kFolderItemsPerBulkCall];			
 	
   		 ItemCount   foundItems;      
 		OSErr err = FSGetCatalogInfoBulk(fFSIterator, 
@@ -104,7 +89,7 @@ bool16 MacFileSystemIterator :: FindNextFile(UniFile&  resultFile)
 								kFSCatInfoGettableInfo,
 								foundCatInfos, 
 								foundFSRefs, 
-								fileSpecs, 
+								NULL, 
 								foundNames);
 		if (err == errFSNoMoreItems) {
 			err = noErr;
@@ -115,15 +100,13 @@ bool16 MacFileSystemIterator :: FindNextFile(UniFile&  resultFile)
 		
 		if(err == noErr &&  foundItems > 0) {
 			ASSERT(foundItems == kFolderItemsPerBulkCall);
-
-			FileUtils::FSSpecToIDFile(fileSpecs[0], resultFile);
-
+			MacFileUtils::FSRefToAFile(foundFSRefs[0], resultFile);
 		}
 		
 		delete [] foundCatInfos;
 		delete [] foundFSRefs;
 		delete [] foundNames;
-		delete [] fileSpecs;
+		//delete [] fileSpecs;
 	} while(kFalse);
 	
 	// Release resources used by this iterator when we're at end
@@ -135,26 +118,24 @@ bool16 MacFileSystemIterator :: FindNextFile(UniFile&  resultFile)
 
 }
 
- bool16 MacFileSystemIterator ::  IsDirectory(const UniFile&  fileSpec)
+ bool16 MacFileSystemIterator ::  IsDirectory(const IDFile& fileSpec)
  {
-	 return fileSpec.GetAttribute(IDFile::kDirectory);
+	return fileSpec.GetAttribute(IDFile::kDirectory);
  }
  
  /*
  Written to allow a little more visibility into what the platform iterator methods are really doing
  	and provide for a bit more testing confidence.
  */
-void MacFileSystemIterator :: GetImmediateChildren(const UniFile&  parentSysFile, 
-										K2Vector<UniFile>& outFileSpecs,
+void MacFileSystemIterator :: GetImmediateChildren(const IDFile& parentSysFile, 
+										K2Vector<IDFile>& outFileSpecs,
 										const int32 maxFolderItemsPerBulkCall )
 {
 	do {
 		outFileSpecs.clear();
 		FSRef folderRef;
-
 		OSErr specToRefErr = MacFileUtils::AFileToFSRef(parentSysFile, folderRef);
-
-     	ASSERT(specToRefErr == noErr);
+	     	ASSERT(specToRefErr == noErr);
 		if(specToRefErr != noErr) {
 			break;
 		}
@@ -171,7 +152,6 @@ void MacFileSystemIterator :: GetImmediateChildren(const UniFile&  parentSysFile
 		FSCatalogInfo*  foundCatInfos = new FSCatalogInfo [maxFolderItemsPerBulkCall];		
 		FSRef*		  foundFSRefs = new FSRef [maxFolderItemsPerBulkCall];			
 		HFSUniStr255*   foundNames = new HFSUniStr255[maxFolderItemsPerBulkCall];			
-		FSSpec*		  fileSpecs = new FSSpec[maxFolderItemsPerBulkCall];			
 	
   		 ItemCount   foundItems;      
 		OSErr err = FSGetCatalogInfoBulk(fsIterator, 
@@ -180,27 +160,25 @@ void MacFileSystemIterator :: GetImmediateChildren(const UniFile&  parentSysFile
 								kFSCatInfoGettableInfo,
 								foundCatInfos, 
 								foundFSRefs, 
-								fileSpecs, 
+								NULL, 
 								foundNames);
 		if (err == errFSNoMoreItems) {
 			err = noErr;
 		} 
 		
 		if(err == noErr &&  foundItems > 0) {
-
 			IDFile tmpFile;
 			for(int32 i=0; i < foundItems; i++) {
-				err = FileUtils::FSSpecToIDFile(fileSpecs[i], tmpFile);
-				if(err == noErr)
+				err = MacFileUtils::FSRefToAFile(foundFSRefs[i], tmpFile);
+				if (err == noErr) {
 					outFileSpecs.push_back(tmpFile);
+				}
 			}
-
 		}
 		
 		delete [] foundCatInfos;
 		delete [] foundFSRefs;
 		delete [] foundNames;
-		delete [] fileSpecs;
 		OSErr junk = FSCloseIterator(fsIterator);
 
 	} while(kFalse);

@@ -1,18 +1,18 @@
 //========================================================================================
 //  
-//  $File: //depot/indesign_3.x/dragonfly/source/sdksamples/paneltreeview/MacFileSystemIterator.h $
+//  $File: //depot/indesign_8.0/gm/source/sdksamples/paneltreeview/MacFileSystemIterator.h $
 //  
 //  Owner: Adobe Developer Technologies
 //  
-//  $Author: Jsun $
+//  $Author: alokumar $
 //  
-//  $DateTime: 2003/12/18 11:20:39 $
+//  $DateTime: 2012/02/15 11:23:10 $
 //  
-//  $Revision: 2 $
+//  $Revision: #1 $
 //  
-//  $Change: 237988 $
+//  $Change: 817912 $
 //  
-//  Copyright 1997-2003 Adobe Systems Incorporated. All rights reserved.
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
 //  
 //  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
 //  with the terms of the Adobe license agreement accompanying it.  If you have received
@@ -37,15 +37,16 @@ public:
 
 		@param fileSpec specifies the folder whose immediate dependents we're interested in
 	 */
-	virtual void SetStartingPath(const UniFile&  fileSpec);
+	virtual void SetStartingPath(const IDFile& fileSpec);
 
 	/**	Find the first file given the starting folder, if there is one.
 		If the start file isn't a folder then this will return kFalse.
 
 		@param resultFile [OUT] parameter
+		@param filter [IN] specifies a filter on the files that are represented by this. No effect on MAC.
 		@return bool16 kTrue if there is a first file, kFalse otherwise
 	 */
-	virtual bool16 FindFirstFile(UniFile&  resultFile);		
+	virtual bool16 FindFirstFile(IDFile& resultFile, PMString filter);		
 
 	/**	Find next file in iteration (doesn't descend into child folders).
 		Will return kFalse if there is no next file given the current iteration state.
@@ -53,12 +54,12 @@ public:
 		@param resultFile [OUT] parameter
 		@return bool16 kTrue if a file could be found, kFalse otherwise
 	 */
-	virtual bool16 FindNextFile(UniFile&  resultFile);
+	virtual bool16 FindNextFile(IDFile& resultFile);
 	
 	/** Determine if specified file is a directory
 		@return kTrue if directory, kFalse otherwise
 	*/
-	virtual bool16 IsDirectory(const UniFile&  fileSpec);
+	virtual bool16 IsDirectory(const IDFile& fileSpec);
 	
 
 	/** Obtain list of files that are immediate descendants of the given parent
@@ -69,21 +70,17 @@ public:
 		@param outFileSpecs [OUT] holds the children of the specified folder
 		@param maxFolderItemsPerBulkCall constrains the max number of items that might be returned. 
 
-	*/		virtual void GetImmediateChildren(const UniFile&  parentSysFile, 
-										K2Vector<UniFile>& outFileSpecs,
+	*/		virtual void GetImmediateChildren(const IDFile& parentSysFile, 
+										K2Vector<IDFile>& outFileSpecs,
 										const int32 maxFolderItemsPerBulkCall=256 );
 
 
 protected:
-	bool16 areEqual(const UniFile&  file1, const UniFile&  file2);
+	bool16 areEqual(const IDFile& file1, const IDFile& file2);
 	
 private:
 #ifdef MACINTOSH 
-  #ifdef INDESIGNCS5_5
-	FSSpec fStartingFile;
-  #else
-    FSRef fStartingFile;
-  #endif 
+	FSRef fStartingFileRef;
 	FSIterator fFSIterator;
 #endif // MACINTOSH
 };
