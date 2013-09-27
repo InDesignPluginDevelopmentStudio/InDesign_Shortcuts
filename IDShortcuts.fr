@@ -67,7 +67,7 @@ resource PluginVersion (kSDKDefPluginVersionResourceID)
 	kIDShortcutsCurrentMajorFormatNumber, kIDShortcutsCurrentMinorFormatNumber,
 	{ kInDesignProduct},
 	{ kWildFS },
-	kModelPlugIn,
+	kUIPlugIn,
 	kIDShortcutsVersion
 };
 

@@ -59,7 +59,7 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\objD\InDesignShortcutsList\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\debugx64\sdk\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\objDx64\InDesignShortcutsList\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\release\sdk\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\Perforce\suna3_T430s\xInDesign\Adobe InDesign CS6\Plug-Ins\IDSC</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\objR\InDesignShortcutsList\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\releasex64\sdk\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\objRx64\InDesignShortcutsList\</IntDir>
