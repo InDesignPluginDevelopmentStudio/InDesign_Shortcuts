@@ -3,6 +3,7 @@
 #include "IDFile.h"
 #include "FileUtils.h"
 #include "IWorkspace.h"
+#include "IShortcutManager.h"
 
 #include "IDSCHelper.h"
 

@@ -96,6 +96,10 @@ resource IgnoreTags(2)
 	kClassIDSpace,
 	{
 		kIDShortcutsPanelWidgetBoss,
+		kIDShortcutsActionComponentBoss,
+		kIDShortcutsPanelWidgetBoss,
+		kIDShortcutsTreeViewWidgetBoss,
+		kIDShortcutsTreeNodeWidgetBoss,
 	}
 };
 
